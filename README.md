@@ -8,7 +8,7 @@ This code provides a framework to analyze the multi-field dynamics of the Higgs�
 
 > **"Primordial features and low-ℓ suppression from isocurvature modes in multi-field Higgs-R² inflation"**
 > *F. Pineda, L. O. Pimentel (2025)*
-> [arXiv:2512.xxxxx](https://arxiv.org/abs/2512.xxxxx) (Update this link when available)
+> [arXiv:2512.14455](https://arxiv.org/abs/2512.14455) 
 
 The code automatically handles the following:
 - Solving the background dynamics.
