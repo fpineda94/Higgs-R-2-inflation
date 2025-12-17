@@ -1,220 +1,442 @@
-\begin{thebibliography}{10}
 
-\bibitem{Achucarro2011}
-A.~Achúcarro, J.-O. Gong, S.~Hardeman, G.~A. Palma, and S.~P. Patil.
-\newblock Features of heavy physics in the cmb power spectrum.
-\newblock {\em Journal of Cosmology and Astroparticle Physics}, 2011(01):030,
-  jan 2011.
+\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{10}
 
-\bibitem{Arnowitt2008}
-R.~Arnowitt, S.~Deser, and C.~W. Misner.
-\newblock Republication of: The dynamics of general relativity.
-\newblock {\em General Relativity and Gravitation}, 40(9):1997–2027, Aug.
-  2008.
+\bibitem{guth1981}
+A.~H. Guth, \emph{Inflationary universe: A possible solution to the horizon and
+  flatness problems},
+  \href{https://doi.org/10.1103/PhysRevD.23.347}{\emph{Phys. Rev. D} {\bfseries
+  23} (1981) 347}.
 
-\bibitem{Barbon2009}
-J.~L.~F. Barbón and J.~R. Espinosa.
-\newblock On the naturalness of higgs inflation.
-\newblock {\em Physical Review D}, 79(8), Apr. 2009.
+\bibitem{Linde1982}
+A.~Linde, \emph{A new inflationary universe scenario: A possible solution of
+  the horizon, flatness, homogeneity, isotropy and primordial monopole
+  problems},
+  \href{https://doi.org/https://doi.org/10.1016/0370-2693(82)91219-9}{\emph{Physics
+  Letters B} {\bfseries 108} (1982) 389}.
 
-\bibitem{Bartolo2001}
-N.~Bartolo, S.~Matarrese, and A.~Riotto.
-\newblock Adiabatic and isocurvature perturbations from inflation: Power
-  spectra and consistency relations.
-\newblock {\em Phys. Rev. D}, 64:123504, Nov 2001.
+\bibitem{Liddle2003}
+A.~R. Liddle and S.~M. Leach, \emph{How long before the end of inflation were
+  observable perturbations produced?},
+  \href{https://doi.org/10.1103/PhysRevD.68.103503}{\emph{Phys. Rev. D}
+  {\bfseries 68} (2003) 103503}.
 
-\bibitem{BEZRUKOV2008}
-F.~Bezrukov and M.~Shaposhnikov.
-\newblock The standard model higgs boson as the inflaton.
-\newblock {\em Physics Letters B}, 659(3):703--706, 2008.
+\bibitem{Stewart1993}
+E.~D. Stewart and D.~H. Lyth, \emph{A more accurate analytic calculation of the
+  spectrum of cosmological perturbations produced during inflation},
+  \href{https://doi.org/https://doi.org/10.1016/0370-2693(93)90379-V}{\emph{Physics
+  Letters B} {\bfseries 302} (1993) 171}.
 
-\bibitem{Burgess2009}
-C.~Burgess, H.~M. Lee, and M.~Trott.
-\newblock Power-counting and the validity of the classical approximation during
-  inflation.
-\newblock {\em Journal of High Energy Physics}, 2009(09):103–103, Sept. 2009.
-
-\bibitem{chen2010prd}
-X.~Chen and Y.~Wang.
-\newblock Large non-gaussianities with intermediate shapes from
-  quasi-single-field inflation.
-\newblock {\em Phys. Rev. D}, 81:063511, Mar 2010.
-
-\bibitem{Chen_2010}
-X.~Chen and Y.~Wang.
-\newblock Quasi-single field inflation and non-gaussianities.
-\newblock {\em Journal of Cosmology and Astroparticle Physics},
-  2010(04):027–027, Apr. 2010.
-
-\bibitem{Cremonini2011}
-S.~Cremonini, Z.~Lalak, and K.~Turzyński.
-\newblock Strongly coupled perturbations in two-field inflationary models.
-\newblock {\em Journal of Cosmology and Astroparticle Physics},
-  2011(03):016–016, Mar. 2011.
-
-\bibitem{Sebastian2012}
-S.~Céspedes, V.~Atal, and G.~A. Palma.
-\newblock On the importance of heavy fields during inflation.
-\newblock {\em Journal of Cosmology and Astroparticle Physics}, 2012(05):008,
-  may 2012.
-
-\bibitem{DiMarco2005}
-F.~Di~Marco and F.~Finelli.
-\newblock Slow-roll inflation for generalized two-field lagrangians.
-\newblock {\em Physical Review D}, 71(12), June 2005.
-
-\bibitem{Dimarco2003}
-F.~Di~Marco, F.~Finelli, and R.~Brandenberger.
-\newblock Adiabatic and isocurvature perturbations for multifield generalized
-  einstein models.
-\newblock {\em Phys. Rev. D}, 67:063512, Mar 2003.
-
-\bibitem{EMA2017}
-Y.~Ema.
-\newblock Higgs scalaron mixed inflation.
-\newblock {\em Physics Letters B}, 770:403--411, 2017.
-
-\bibitem{Ema_2024}
-Y.~Ema and S.~Verner.
-\newblock Cosmological collider signatures of higgs-r2 inflation.
-\newblock {\em Journal of Cosmology and Astroparticle Physics}, 2024(04):039,
-  apr 2024.
-
-\bibitem{Fumagalli2021}
-J.~Fumagalli, S.~Renaux-Petel, and L.~T. Witkowski.
-\newblock Oscillations in the stochastic gravitational wave background from
-  sharp features and particle production during inflation.
-\newblock {\em Journal of Cosmology and Astroparticle Physics}, 2021(08):030,
-  Aug. 2021.
-
-\bibitem{Saenz2020}
-S.~Garcia-Saenz, L.~Pinol, and S.~Renaux-Petel.
-\newblock Revisiting non-gaussianity in multifield inflation with curved field
-  space.
-\newblock {\em Journal of High Energy Physics}, 2020(1), Jan. 2020.
-
-\bibitem{Gong2017}
-J.-O. Gong.
-\newblock Multi-field inflation and cosmological perturbations.
-\newblock {\em International Journal of Modern Physics D}, 26(01):1740003,
-  2017.
-
-\bibitem{Gong2011}
-J.-O. Gong and T.~Tanaka.
-\newblock A covariant approach to general field space metric in multi-field
-  inflation.
-\newblock {\em Journal of Cosmology and Astroparticle Physics}, 2011(03):015,
-  mar 2011.
-
-\bibitem{GORBUNOV2019}
-D.~Gorbunov and A.~Tokareva.
-\newblock Scalaron the healer: removing the strong-coupling in the higgs- and
-  higgs-dilaton inflations.
-\newblock {\em Physics Letters B}, 788:37--41, 2019.
-
-\bibitem{Gordon2000}
-C.~Gordon, D.~Wands, B.~A. Bassett, and R.~Maartens.
-\newblock Adiabatic and entropy perturbations from inflation.
-\newblock {\em Phys. Rev. D}, 63:023506, Dec 2000.
-
-\bibitem{GUNDHI2020}
-A.~Gundhi and C.~F. Steinwachs.
-\newblock Scalaron-higgs inflation.
-\newblock {\em Nuclear Physics B}, 954:114989, 2020.
-
-\bibitem{He2018}
-M.~He, A.~A. Starobinsky, and J.~Yokoyama.
-\newblock Inflation in the mixed higgs-r2 model.
-\newblock {\em Journal of Cosmology and Astroparticle Physics},
-  2018(05):064–064, May 2018.
-
-\bibitem{Kaiser2010a}
-D.~I. Kaiser.
-\newblock Conformal transformations with multiple scalar fields.
-\newblock {\em Physical Review D}, 81(8), Apr. 2010.
-
-\bibitem{KARAMITSOS2018}
-S.~Karamitsos and A.~Pilaftsis.
-\newblock Frame covariant nonminimal multifield inflation.
-\newblock {\em Nuclear Physics B}, 927:219--254, 2018.
-
-\bibitem{Lalak2007}
-Z.~Lalak, D.~Langlois, S.~Pokorski, and K.~Turzyński.
-\newblock Curvature and isocurvature perturbations in two-field inflation.
-\newblock {\em Journal of Cosmology and Astroparticle Physics}, 2007(07):014,
-  jul 2007.
-
-\bibitem{LANGLOIS2003}
-D.~Langlois.
-\newblock Isocurvature cosmological perturbations and the cmb.
-\newblock {\em Comptes Rendus Physique}, 4(8):953--959, 2003.
-\newblock Dossier: The Cosmic Microwave Background.
-
-\bibitem{Langlois2008}
-D.~Langlois and S.~Renaux-Petel.
-\newblock Perturbations in generalized multi-field inflation.
-\newblock {\em Journal of Cosmology and Astroparticle Physics}, 2008(04):017,
-  apr 2008.
-
-\bibitem{Lyth2005}
-D.~H. Lyth, K.~A. Malik, and M.~Sasaki.
-\newblock A general proof of the conservation of the curvature perturbation.
-\newblock {\em Journal of Cosmology and Astroparticle Physics}, 2005(05):004,
-  may 2005.
-
-\bibitem{Lyth2005a}
-D.~H. Lyth and Y.~Rodríguez.
-\newblock Non-gaussianity from the second-order cosmological perturbation.
-\newblock {\em Physical Review D}, 71(12), June 2005.
-
-\bibitem{Maldacena2003}
-J.~Maldacena.
-\newblock Non-gaussian features of primordial fluctuations in single field
-  inflationary models.
-\newblock {\em Journal of High Energy Physics}, 2003(05):013–013, May 2003.
-
-\bibitem{MUKHANOV1992}
-V.~Mukhanov, H.~Feldman, and R.~Brandenberger.
-\newblock Theory of cosmological perturbations.
-\newblock {\em Physics Reports}, 215(5):203--333, 1992.
-
-\bibitem{MUKHANOV1998}
-V.~Mukhanov and P.~J. Steinhardt.
-\newblock Density perturbations in multifield inflationary models.
-\newblock {\em Physics Letters B}, 422(1):52--60, 1998.
-
-\bibitem{Sasaki1996}
-M.~Sasaki and E.~D. Stewart.
-\newblock {A General Analytic Formula for the Spectral Index of the Density
-  Perturbations Produced during Inflation}.
-\newblock {\em Progress of Theoretical Physics}, 95(1):71--78, 01 1996.
-
-\bibitem{Seery2005}
-D.~Seery and J.~E. Lidsey.
-\newblock Primordial non-gaussianities in single-field inflation.
-\newblock {\em Journal of Cosmology and Astroparticle Physics},
-  2005(06):003–003, June 2005.
-
-\bibitem{STAROBINSKY2001}
-A.~A. Starobinsky, S.~Tsujikawa, and J.~Yokoyama.
-\newblock Cosmological perturbations from multi-field inflation in generalized
-  einstein theories.
-\newblock {\em Nuclear Physics B}, 610(1):383--410, 2001.
-
-\bibitem{Tolley_2010}
-A.~J. Tolley and M.~Wyman.
-\newblock Equilateral non-gaussianity from multifield dynamics.
-\newblock {\em Physical Review D}, 81(4), Feb. 2010.
+\bibitem{planck2018x}
+Y.~Akrami, F.~Arroja, M.~Ashdown, J.~Aumont, C.~Baccigalupi, M.~Ballardini
+  et~al., \emph{Planck 2018 results-x. constraints on inflation},
+  {\emph{Astronomy \& Astrophysics} {\bfseries 641} (2020) A10}.
 
 \bibitem{Wands2002}
-D.~Wands, N.~Bartolo, S.~Matarrese, and A.~Riotto.
-\newblock Observational test of two-field inflation.
-\newblock {\em Phys. Rev. D}, 66:043520, Aug 2002.
+D.~Wands, N.~Bartolo, S.~Matarrese and A.~Riotto, \emph{Observational test of
+  two-field inflation},
+  \href{https://doi.org/10.1103/PhysRevD.66.043520}{\emph{Phys. Rev. D}
+  {\bfseries 66} (2002) 043520}.
+
+\bibitem{Bartolo2001}
+N.~Bartolo, S.~Matarrese and A.~Riotto, \emph{Adiabatic and isocurvature
+  perturbations from inflation: Power spectra and consistency relations},
+  \href{https://doi.org/10.1103/PhysRevD.64.123504}{\emph{Phys. Rev. D}
+  {\bfseries 64} (2001) 123504}.
+
+\bibitem{Huston2012}
+I.~Huston and A.~J. Christopherson, \emph{Calculating nonadiabatic pressure
+  perturbations during multifield inflation},
+  \href{https://doi.org/10.1103/PhysRevD.85.063507}{\emph{Phys. Rev. D}
+  {\bfseries 85} (2012) 063507}.
+
+\bibitem{Dimarco2003}
+F.~Di~Marco, F.~Finelli and R.~Brandenberger, \emph{Adiabatic and isocurvature
+  perturbations for multifield generalized einstein models},
+  \href{https://doi.org/10.1103/PhysRevD.67.063512}{\emph{Phys. Rev. D}
+  {\bfseries 67} (2003) 063512}.
+
+\bibitem{MUKHANOV1998}
+V.~Mukhanov and P.~J. Steinhardt, \emph{Density perturbations in multifield
+  inflationary models},
+  \href{https://doi.org/https://doi.org/10.1016/S0370-2693(98)00032-X}{\emph{Physics
+  Letters B} {\bfseries 422} (1998) 52}.
+
+\bibitem{Lalak2007}
+Z.~Lalak, D.~Langlois, S.~Pokorski and K.~Turzyński, \emph{Curvature and
+  isocurvature perturbations in two-field inflation},
+  \href{https://doi.org/10.1088/1475-7516/2007/07/014}{\emph{Journal of
+  Cosmology and Astroparticle Physics} {\bfseries 2007} (2007) 014}.
+
+\bibitem{STAROBINSKY2001}
+A.~A. Starobinsky, S.~Tsujikawa and J.~Yokoyama, \emph{Cosmological
+  perturbations from multi-field inflation in generalized einstein theories},
+  \href{https://doi.org/https://doi.org/10.1016/S0550-3213(01)00322-4}{\emph{Nuclear
+  Physics B} {\bfseries 610} (2001) 383}.
+
+\bibitem{Langlois1999}
+D.~Langlois, \emph{Correlated adiabatic and isocurvature perturbations from
+  double inflation},
+  \href{https://doi.org/10.1103/PhysRevD.59.123512}{\emph{Phys. Rev. D}
+  {\bfseries 59} (1999) 123512}.
+
+\bibitem{LANGLOIS2003}
+D.~Langlois, \emph{Isocurvature cosmological perturbations and the cmb},
+  \href{https://doi.org/https://doi.org/10.1016/j.crhy.2003.09.004}{\emph{Comptes
+  Rendus Physique} {\bfseries 4} (2003) 953}.
+
+\bibitem{Saenz2020}
+S.~Garcia-Saenz, L.~Pinol and S.~Renaux-Petel, \emph{Revisiting non-gaussianity
+  in multifield inflation with curved field space},
+  \href{https://doi.org/10.1007/jhep01(2020)073}{\emph{Journal of High Energy
+  Physics} {\bfseries 2020} (2020) }.
+
+\bibitem{Chen_2010}
+X.~Chen and Y.~Wang, \emph{Quasi-single field inflation and non-gaussianities},
+  \href{https://doi.org/10.1088/1475-7516/2010/04/027}{\emph{Journal of
+  Cosmology and Astroparticle Physics} {\bfseries 2010} (2010) 027–027}.
+
+\bibitem{Battefeld_2007}
+T.~Battefeld and R.~Easther, \emph{Non-gaussianities in multi-field inflation},
+  \href{https://doi.org/10.1088/1475-7516/2007/03/020}{\emph{Journal of
+  Cosmology and Astroparticle Physics} {\bfseries 2007} (2007) 020–020}.
+
+\bibitem{Bernardeau_2002}
+F.~Bernardeau and J.-P. Uzan, \emph{Non-gaussianity in multifield inflation},
+  \href{https://doi.org/10.1103/physrevd.66.103506}{\emph{Physical Review D}
+  {\bfseries 66} (2002) }.
+
+\bibitem{Iarygina_2024}
+O.~Iarygina, M.~D. Marsh and G.~Salinas, \emph{Non-gaussianity in rapid-turn
+  multi-field inflation},
+  \href{https://doi.org/10.1088/1475-7516/2024/03/014}{\emph{Journal of
+  Cosmology and Astroparticle Physics} {\bfseries 2024} (2024) 014}.
+
+\bibitem{Kaiser2013a}
+D.~I. Kaiser, E.~A. Mazenc and E.~I. Sfakianakis, \emph{Primordial bispectrum
+  from multifield inflation with nonminimal couplings},
+  \href{https://doi.org/10.1103/PhysRevD.87.064004}{\emph{Phys. Rev. D}
+  {\bfseries 87} (2013) 064004}.
+
+\bibitem{Elliston_2012}
+J.~Elliston, D.~Seery and R.~Tavakol, \emph{The inflationary bispectrum with
+  curved field-space},
+  \href{https://doi.org/10.1088/1475-7516/2012/11/060}{\emph{Journal of
+  Cosmology and Astroparticle Physics} {\bfseries 2012} (2012) 060–060}.
+
+\bibitem{Schutz2014}
+K.~Schutz, E.~I. Sfakianakis and D.~I. Kaiser, \emph{Multifield inflation after
+  planck: Isocurvature modes from nonminimal couplings},
+  \href{https://doi.org/10.1103/PhysRevD.89.064044}{\emph{Phys. Rev. D}
+  {\bfseries 89} (2014) 064044}.
+
+\bibitem{Kaiser2014}
+D.~I. Kaiser and E.~I. Sfakianakis, \emph{Multifield inflation after planck:
+  The case for nonminimal couplings},
+  \href{https://doi.org/10.1103/physrevlett.112.011302}{\emph{Physical Review
+  Letters} {\bfseries 112} (2014) }.
+
+\bibitem{Kaiser2010}
+D.~I. Kaiser and A.~T. Todhunter, \emph{Primordial perturbations from
+  multifield inflation with nonminimal couplings},
+  \href{https://doi.org/10.1103/PhysRevD.81.124037}{\emph{Phys. Rev. D}
+  {\bfseries 81} (2010) 124037}.
+
+\bibitem{Braglia2020}
+M.~Braglia, D.~K. Hazra, F.~Finelli, G.~F. Smoot, L.~Sriramkumar and A.~A.
+  Starobinsky, \emph{Generating pbhs and small-scale gws in two-field models of
+  inflation},
+  \href{https://doi.org/10.1088/1475-7516/2020/08/001}{\emph{Journal of
+  Cosmology and Astroparticle Physics} {\bfseries 2020} (2020) 001–001}.
+
+\bibitem{DiMarco2005}
+F.~Di~Marco and F.~Finelli, \emph{Slow-roll inflation for generalized two-field
+  lagrangians},
+  \href{https://doi.org/10.1103/physrevd.71.123502}{\emph{Physical Review D}
+  {\bfseries 71} (2005) }.
+
+\bibitem{Achucarro2011}
+A.~Achúcarro, J.-O. Gong, S.~Hardeman, G.~A. Palma and S.~P. Patil,
+  \emph{Features of heavy physics in the cmb power spectrum},
+  \href{https://doi.org/10.1088/1475-7516/2011/01/030}{\emph{Journal of
+  Cosmology and Astroparticle Physics} {\bfseries 2011} (2011) 030}.
+
+\bibitem{Sebastian2012}
+S.~Céspedes, V.~Atal and G.~A. Palma, \emph{On the importance of heavy fields
+  during inflation},
+  \href{https://doi.org/10.1088/1475-7516/2012/05/008}{\emph{Journal of
+  Cosmology and Astroparticle Physics} {\bfseries 2012} (2012) 008}.
+
+\bibitem{Gao2012}
+X.~Gao, D.~Langlois and S.~Mizuno, \emph{Influence of heavy modes on
+  perturbations in multiple field inflation},
+  \href{https://doi.org/10.1088/1475-7516/2012/10/040}{\emph{Journal of
+  Cosmology and Astroparticle Physics} {\bfseries 2012} (2012) 040–040}.
+
+\bibitem{EMA2017}
+Y.~Ema, \emph{Higgs scalaron mixed inflation},
+  \href{https://doi.org/https://doi.org/10.1016/j.physletb.2017.04.060}{\emph{Physics
+  Letters B} {\bfseries 770} (2017) 403}.
+
+\bibitem{He2018}
+M.~He, A.~A. Starobinsky and J.~Yokoyama, \emph{Inflation in the mixed higgs-r2
+  model}, \href{https://doi.org/10.1088/1475-7516/2018/05/064}{\emph{Journal of
+  Cosmology and Astroparticle Physics} {\bfseries 2018} (2018) 064–064}.
 
 \bibitem{Wang2017}
-Y.-C. Wang and T.~Wang.
-\newblock Primordial perturbations generated by higgs field and ${R}^{2}$
-  operator.
-\newblock {\em Phys. Rev. D}, 96:123506, Dec 2017.
+Y.-C. Wang and T.~Wang, \emph{Primordial perturbations generated by higgs field
+  and ${R}^{2}$ operator},
+  \href{https://doi.org/10.1103/PhysRevD.96.123506}{\emph{Phys. Rev. D}
+  {\bfseries 96} (2017) 123506}.
 
-\end{thebibliography}
+\bibitem{GUNDHI2020}
+A.~Gundhi and C.~F. Steinwachs, \emph{Scalaron-higgs inflation},
+  \href{https://doi.org/https://doi.org/10.1016/j.nuclphysb.2020.114989}{\emph{Nuclear
+  Physics B} {\bfseries 954} (2020) 114989}.
+
+\bibitem{BEZRUKOV2008}
+F.~Bezrukov and M.~Shaposhnikov, \emph{The standard model higgs boson as the
+  inflaton},
+  \href{https://doi.org/https://doi.org/10.1016/j.physletb.2007.11.072}{\emph{Physics
+  Letters B} {\bfseries 659} (2008) 703}.
+
+\bibitem{SALVIO2015}
+A.~Salvio and A.~Mazumdar, \emph{Classical and quantum initial conditions for
+  higgs inflation},
+  \href{https://doi.org/https://doi.org/10.1016/j.physletb.2015.09.020}{\emph{Physics
+  Letters B} {\bfseries 750} (2015) 194}.
+
+\bibitem{GORBUNOV2019}
+D.~Gorbunov and A.~Tokareva, \emph{Scalaron the healer: removing the
+  strong-coupling in the higgs- and higgs-dilaton inflations},
+  \href{https://doi.org/https://doi.org/10.1016/j.physletb.2018.11.015}{\emph{Physics
+  Letters B} {\bfseries 788} (2019) 37}.
+
+\bibitem{BEZRUKOV2019657}
+F.~Bezrukov, D.~Gorbunov, C.~Shepherd and A.~Tokareva, \emph{Some like it hot:
+  R2 heals higgs inflation, but does not cool it},
+  \href{https://doi.org/https://doi.org/10.1016/j.physletb.2019.06.064}{\emph{Physics
+  Letters B} {\bfseries 795} (2019) 657}.
+
+\bibitem{He2021}
+M.~He, \emph{{Perturbative reheating in the mixed Higgs-R2model}},
+  \href{https://doi.org/10.1088/1475-7516/2021/05/021}{\emph{Journal of
+  Cosmology and Astroparticle Physics} {\bfseries 2021} (2021) }
+  [\href{https://arxiv.org/abs/2010.11717}{{\ttfamily 2010.11717}}].
+
+\bibitem{He2019}
+M.~He, R.~Jinno, K.~Kamada, S.~C. Park, A.~A. Starobinsky and J.~Yokoyama,
+  \emph{{On the violent preheating in the mixed Higgs-R 2 inflationary model}},
+  \href{https://doi.org/10.1016/j.physletb.2019.02.008}{\emph{Physics Letters,
+  Section B: Nuclear, Elementary Particle and High-Energy Physics} {\bfseries
+  791} (2019) 36} [\href{https://arxiv.org/abs/1812.10099}{{\ttfamily
+  1812.10099}}].
+
+\bibitem{He2021tachionic}
+M.~He, R.~Jinno, K.~Kamada, A.~A. Starobinsky and J.~Yokoyama,
+  \emph{{Occurrence of tachyonic preheating in the mixed Higgs-R2 model}},
+  \href{https://doi.org/10.1088/1475-7516/2021/01/066}{\emph{Journal of
+  Cosmology and Astroparticle Physics} {\bfseries 2021} (2021) 20}
+  [\href{https://arxiv.org/abs/2007.10369}{{\ttfamily 2007.10369}}].
+
+\bibitem{Pineda2025}
+F.~Pineda and L.~O. Pimentel, \emph{Non-perturbative approach for scalar
+  particle production in higgs-$r^2$ inflation},
+  \href{https://doi.org/10.1140/epjc/s10052-025-14426-0}{\emph{The European
+  Physical Journal C} {\bfseries 85} (2025) 731}.
+
+\bibitem{Durrer2022}
+R.~Durrer, O.~Sobol and S.~Vilchinskii, \emph{Magnetogenesis in
+  higgs-starobinsky inflation},
+  \href{https://doi.org/10.1103/physrevd.106.123520}{\emph{Physical Review D}
+  {\bfseries 106} (2022) }.
+
+\bibitem{Ema2024}
+Y.~Ema and S.~Verner, \emph{Cosmological collider signatures of higgs-r2
+  inflation},
+  \href{https://doi.org/10.1088/1475-7516/2024/04/039}{\emph{Journal of
+  Cosmology and Astroparticle Physics} {\bfseries 2024} (2024) 039}.
+
+\bibitem{Kim2025}
+J.~Kim, Z.~Yang and Y.-l. Zhang, \emph{{Gravitational wave signatures of
+  preheating in Higgs-R2 inflation}},
+  \href{https://doi.org/10.1103/pvtn-z4xt}{\emph{Phys. Rev. D} {\bfseries 112}
+  (2025) 043534} [\href{https://arxiv.org/abs/2503.16907}{{\ttfamily
+  2503.16907}}].
+
+\bibitem{Cheong2021}
+D.~Y. Cheong, S.~M. Lee and S.~C. Park, \emph{Primordial black holes in
+  higgs-r2 inflation as the whole of dark matter},
+  \href{https://doi.org/10.1088/1475-7516/2021/01/032}{\emph{Journal of
+  Cosmology and Astroparticle Physics} {\bfseries 2021} (2021) 032}.
+
+\bibitem{Cheong_2022}
+D.~Y. Cheong, K.~Kohri and S.~C. Park, \emph{The inflaton that could:
+  primordial black holes and second order gravitational waves from tachyonic
+  instability induced in higgs-r2 inflation},
+  \href{https://doi.org/10.1088/1475-7516/2022/10/015}{\emph{Journal of
+  Cosmology and Astroparticle Physics} {\bfseries 2022} (2022) 015}.
+
+\bibitem{Tanmoy2025}
+T.~Modak, \emph{${R}^{2}$-higgs inflation: ${R}^{3}$ contribution and
+  preheating after act and spt data},
+  \href{https://doi.org/10.1103/srpt-jd6s}{\emph{Phys. Rev. D} {\bfseries 112}
+  (2025) 115006}.
+
+\bibitem{Contaldi2003}
+C.~R. Contaldi, M.~Peloso, L.~Kofman and A.~Linde, \emph{Suppressing the lower
+  multipoles in the cmb anisotropies},
+  \href{https://doi.org/10.1088/1475-7516/2003/07/002}{\emph{Journal of
+  Cosmology and Astroparticle Physics} {\bfseries 2003} (2003) 002–002}.
+
+\bibitem{Jain2009}
+R.~K. Jain, P.~Chingangbam, J.-O. Gong, L.~Sriramkumar and T.~Souradeep,
+  \emph{Punctuated inflation and the low cmb multipoles},
+  \href{https://doi.org/10.1088/1475-7516/2009/01/009}{\emph{Journal of
+  Cosmology and Astroparticle Physics} {\bfseries 2009} (2009) 009–009}.
+
+\bibitem{Chluba2015}
+J.~Chluba, J.~Hamann and S.~P. Patil, \emph{Features and new physical scales in
+  primordial observables: Theory and observation},
+  \href{https://doi.org/10.1142/s0218271815300232}{\emph{International Journal
+  of Modern Physics D} {\bfseries 24} (2015) 1530023}.
+
+\bibitem{Barbon2009}
+J.~L.~F. Barbón and J.~R. Espinosa, \emph{On the naturalness of higgs
+  inflation}, \href{https://doi.org/10.1103/physrevd.79.081302}{\emph{Physical
+  Review D} {\bfseries 79} (2009) }.
+
+\bibitem{Burgess2009}
+C.~Burgess, H.~M. Lee and M.~Trott, \emph{Power-counting and the validity of
+  the classical approximation during inflation},
+  \href{https://doi.org/10.1088/1126-6708/2009/09/103}{\emph{Journal of High
+  Energy Physics} {\bfseries 2009} (2009) 103–103}.
+
+\bibitem{Kaiser2010a}
+D.~I. Kaiser, \emph{Conformal transformations with multiple scalar fields},
+  \href{https://doi.org/10.1103/physrevd.81.084044}{\emph{Physical Review D}
+  {\bfseries 81} (2010) }.
+
+\bibitem{Tolley_2010}
+A.~J. Tolley and M.~Wyman, \emph{Equilateral non-gaussianity from multifield
+  dynamics}, \href{https://doi.org/10.1103/physrevd.81.043502}{\emph{Physical
+  Review D} {\bfseries 81} (2010) }.
+
+\bibitem{Cremonini2011}
+S.~Cremonini, Z.~Lalak and K.~Turzyński, \emph{Strongly coupled perturbations
+  in two-field inflationary models},
+  \href{https://doi.org/10.1088/1475-7516/2011/03/016}{\emph{Journal of
+  Cosmology and Astroparticle Physics} {\bfseries 2011} (2011) 016–016}.
+
+\bibitem{Gong2011}
+J.-O. Gong and T.~Tanaka, \emph{A covariant approach to general field space
+  metric in multi-field inflation},
+  \href{https://doi.org/10.1088/1475-7516/2011/03/015}{\emph{Journal of
+  Cosmology and Astroparticle Physics} {\bfseries 2011} (2011) 015}.
+
+\bibitem{Gong2017}
+J.-O. Gong, \emph{Multi-field inflation and cosmological perturbations},
+  \href{https://doi.org/10.1142/S021827181740003X}{\emph{International Journal
+  of Modern Physics D} {\bfseries 26} (2017) 1740003}
+  [\href{https://arxiv.org/abs/https://doi.org/10.1142/S021827181740003X}{{\ttfamily
+  https://doi.org/10.1142/S021827181740003X}}].
+
+\bibitem{KARAMITSOS2018}
+S.~Karamitsos and A.~Pilaftsis, \emph{Frame covariant nonminimal multifield
+  inflation},
+  \href{https://doi.org/https://doi.org/10.1016/j.nuclphysb.2017.12.015}{\emph{Nuclear
+  Physics B} {\bfseries 927} (2018) 219}.
+
+\bibitem{Fumagalli2021}
+J.~Fumagalli, S.~Renaux-Petel and L.~T. Witkowski, \emph{Oscillations in the
+  stochastic gravitational wave background from sharp features and particle
+  production during inflation},
+  \href{https://doi.org/10.1088/1475-7516/2021/08/030}{\emph{Journal of
+  Cosmology and Astroparticle Physics} {\bfseries 2021} (2021) 030}.
+
+\bibitem{Mishra_2020}
+S.~S. Mishra and V.~Sahni, \emph{Primordial black holes from a tiny bump/dip in
+  the inflaton potential},
+  \href{https://doi.org/10.1088/1475-7516/2020/04/007}{\emph{Journal of
+  Cosmology and Astroparticle Physics} {\bfseries 2020} (2020) 007–007}.
+
+\bibitem{Arnowitt2008}
+R.~Arnowitt, S.~Deser and C.~W. Misner, \emph{Republication of: The dynamics of
+  general relativity},
+  \href{https://doi.org/10.1007/s10714-008-0661-1}{\emph{General Relativity and
+  Gravitation} {\bfseries 40} (2008) 1997–2027}.
+
+\bibitem{Maldacena2003}
+J.~Maldacena, \emph{Non-gaussian features of primordial fluctuations in single
+  field inflationary models},
+  \href{https://doi.org/10.1088/1126-6708/2003/05/013}{\emph{Journal of High
+  Energy Physics} {\bfseries 2003} (2003) 013–013}.
+
+\bibitem{Langlois2008}
+D.~Langlois and S.~Renaux-Petel, \emph{Perturbations in generalized multi-field
+  inflation},
+  \href{https://doi.org/10.1088/1475-7516/2008/04/017}{\emph{Journal of
+  Cosmology and Astroparticle Physics} {\bfseries 2008} (2008) 017}.
+
+\bibitem{Sasaki1996}
+M.~Sasaki and E.~D. Stewart, \emph{{A General Analytic Formula for the Spectral
+  Index of the Density Perturbations Produced during Inflation}},
+  \href{https://doi.org/10.1143/PTP.95.71}{\emph{Progress of Theoretical
+  Physics} {\bfseries 95} (1996) 71}
+  [\href{https://arxiv.org/abs/https://academic.oup.com/ptp/article-pdf/95/1/71/5377016/95-1-71.pdf}{{\ttfamily
+  https://academic.oup.com/ptp/article-pdf/95/1/71/5377016/95-1-71.pdf}}].
+
+\bibitem{Gordon2000}
+C.~Gordon, D.~Wands, B.~A. Bassett and R.~Maartens, \emph{Adiabatic and entropy
+  perturbations from inflation},
+  \href{https://doi.org/10.1103/PhysRevD.63.023506}{\emph{Phys. Rev. D}
+  {\bfseries 63} (2000) 023506}.
+
+\bibitem{Seery2005}
+D.~Seery and J.~E. Lidsey, \emph{Primordial non-gaussianities in single-field
+  inflation},
+  \href{https://doi.org/10.1088/1475-7516/2005/06/003}{\emph{Journal of
+  Cosmology and Astroparticle Physics} {\bfseries 2005} (2005) 003–003}.
+
+\bibitem{Lyth2005}
+D.~H. Lyth, K.~A. Malik and M.~Sasaki, \emph{A general proof of the
+  conservation of the curvature perturbation},
+  \href{https://doi.org/10.1088/1475-7516/2005/05/004}{\emph{Journal of
+  Cosmology and Astroparticle Physics} {\bfseries 2005} (2005) 004}.
+
+\bibitem{Lyth2005a}
+D.~H. Lyth and Y.~Rodríguez, \emph{Non-gaussianity from the second-order
+  cosmological perturbation},
+  \href{https://doi.org/10.1103/physrevd.71.123508}{\emph{Physical Review D}
+  {\bfseries 71} (2005) }.
+
+\bibitem{MUKHANOV1992}
+V.~Mukhanov, H.~Feldman and R.~Brandenberger, \emph{Theory of cosmological
+  perturbations},
+  \href{https://doi.org/https://doi.org/10.1016/0370-1573(92)90044-Z}{\emph{Physics
+  Reports} {\bfseries 215} (1992) 203}.
+
+\bibitem{chen2010prd}
+X.~Chen and Y.~Wang, \emph{Large non-gaussianities with intermediate shapes
+  from quasi-single-field inflation},
+  \href{https://doi.org/10.1103/PhysRevD.81.063511}{\emph{Phys. Rev. D}
+  {\bfseries 81} (2010) 063511}.
+
+\bibitem{class}
+J.~Lesgourgues, \emph{{The Cosmic Linear Anisotropy Solving System (CLASS) I:
+  Overview}},  \href{https://arxiv.org/abs/1104.2932}{{\ttfamily 1104.2932}}.
+
+\bibitem{BICEP_Keck_2021}
+P.~Ade, Z.~Ahmed, M.~Amiri, D.~Barkats, R.~B. Thakur, C.~Bischoff et~al.,
+  \emph{Improved constraints on primordial gravitational waves using planck ,
+  wmap, and bicep/ keck observations through the 2018 observing season},
+  \href{https://doi.org/10.1103/physrevlett.127.151301}{\emph{Physical Review
+  Letters} {\bfseries 127} (2021) }.
+
+\bibitem{ACT_2025}
+E.~Calabrese, J.~C. Hill, H.~T. Jense, A.~La~Posta, I.~Abril-Cabezas, G.~E.
+  Addison et~al., \emph{The atacama cosmology telescope: Dr6 constraints on
+  extended cosmological models},
+  \href{https://doi.org/10.1088/1475-7516/2025/11/063}{\emph{Journal of
+  Cosmology and Astroparticle Physics} {\bfseries 2025} (2025) 063}.
+
+\end{thebibliography}\endgroup

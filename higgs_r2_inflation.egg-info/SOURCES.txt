@@ -1,0 +1,12 @@
+README.md
+setup.py
+Higgs_R2/Derivatives_potential.py
+Higgs_R2/Potential.py
+Higgs_R2/__init__.py
+Higgs_R2/background.py
+Higgs_R2/background_time.py
+Higgs_R2/perturbations.py
+higgs_r2_inflation.egg-info/PKG-INFO
+higgs_r2_inflation.egg-info/SOURCES.txt
+higgs_r2_inflation.egg-info/dependency_links.txt
+higgs_r2_inflation.egg-info/top_level.txt

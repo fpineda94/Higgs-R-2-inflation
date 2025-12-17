@@ -1,28 +1,19 @@
+\documentclass[a4paper,11pt]{article}
+\pdfoutput=1 % if your are submitting a pdflatex (i.e. if you have
+             % images in pdf, png or jpg format)
 
-\documentclass[12pt,a4paper,english,nofootinbib]{revtex4}
-\usepackage{lmodern}
-\renewcommand{\familydefault}{\rmdefault}
-\usepackage[T1]{fontenc}
+\usepackage{jcappub} % for details on the use of the package, please
+                     % see the JCAP-author-manual
+\usepackage{orcidlink}
 \usepackage[utf8]{inputenc}
-\setcounter{secnumdepth}{4}
-\setcounter{tocdepth}{4}
-\usepackage{babel}
-\usepackage{amsmath}
+\usepackage{amsfonts,amssymb,mathrsfs,amsmath,esint,bm}
+\usepackage{pdflscape}
+\usepackage[capitalise]{cleveref}
+\usepackage{hyperref}
 \usepackage{graphicx}
-\usepackage{amssymb}
+\usepackage{booktabs}
 \usepackage{lipsum}
-
-%\usepackage{esint}
-\usepackage[unicode=true, pdfusetitle,
- bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
- breaklinks=false,pdfborder={0 0 1},backref=false,colorlinks=false]
- {hyperref}
-\setlength{\oddsidemargin}{-0.25in} \setlength{\textwidth}{7.00in}
-\setlength{\topmargin}{-0.25in} \setlength{\textheight}{9.0in}
-\mathsurround 1.5pt
-\textwidth 17cm \textheight 23 cm \oddsidemargin -0.5cm \topmargin
--1.5cm
-
+\allowdisplaybreaks
 %\input mesmacros
 \def\b{\begin{equation}}
  \def\e{\end{equation}}
@@ -34,130 +25,124 @@
 \newcommand{\beq}{\begin{eqnarray}}
 \newcommand{\enq}{\end{eqnarray}}
 
-\font\romdix=cmr10 \font\sldix=cmsl10 \font\bfdix=cmbx10
-\newcommand{\bib}[3]{{\maj #1},\ {\romdix #2}.\ {\sldix #3}.}
-\newcommand{\bibb}[4]{{\maj #1}\ {\romdix and}\
-{\maj #2},\ {\romdix #3}.\ {\sldix #4}.}
-\newcommand{\bibbb}[5]{{\maj #1},\, {\maj #2}\ {\romdix and}\
-{\maj #3},\ {\romdix #4}.\ {\sldix #5}.}
-\newcommand{\bibbbb}[6]{{\maj #1},\, {\maj #2},\, {\maj #3}\ {\romdix
-and}\ {\maj #4},\ {\romdix #5}.\ {\sldix #6}.}
-\newcommand{\bibbbbb}[7]{{\maj #1},\, {\maj #2},\, {\maj #3},\, {\maj #4}\
-{\romdix and}\ {\maj #5},\ {\romdix #6}.\ {\sldix #7}.}
-\font\maj=cmcsc10 \font\itdix=cmti10
-
-\newcommand\dpx[1]{\frac{\partial}{\partial#1}}
-\newcommand\ddpx[1]{\frac{\partial^2}{\partial#1^2}}
-
-%\pagestyle{empty}
 
 
-\newcommand\hs[1]{\hskip#1pt}
-\newcommand{\sect}[1]{\setcounter{equation}{0}\section{#1}}
-\renewcommand{\theequation}{\thesection.\arabic{equation}}
-\newcommand{\Id}{{\bf 1}}
-\newtheorem{lemma}{Lemma}
-\makeatletter
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
-\usepackage{latexsym}\usepackage{bm}\def\baselinestretch{1.0}
 
+
+\title{\boldmath Primordial features and low-$\ell$ suppression from isocurvature modes in multi-field Higgs–$R^2$ inflation}
+
+
+%% %simple case: 2 authors, same institution
+\author[a, 1]{Flavio Pineda \orcidlink{0000-0002-1265-5229}}
+\author[a, 2]{Luis O. Pimentel \orcidlink{0000-0002-3614-7237}}
+\affiliation[a]{Departamento de Física, Universidad Autónoma Metropolitana Iztapalapa P. O. Box 55-534, 09340 México, CDMX., México}
+
+% % more complex case: 4 authors, 3 institutions, 2 footnotes
+% \author[a,b,1]{F. Irst,\note{Corresponding author.}}
+% \author[c]{S. Econd,}
+% \author[a,2]{T. Hird\note{Also at Some University.}}
+% \author[a,2]{and Fourth}
+
+% % The "\note" macro will give a warning: "Ignoring empty anchor..."
+% % you can safely ignore it.
+
+% \affiliation[a]{One University,\\some-street, Country}
+% \affiliation[b]{Another University,\\different-address, Country}
+% \affiliation[c]{A School for Advanced Studies,\\some-location, Country}
+
+% e-mail addresses: one for each author, in the same order as the authors
+\emailAdd{fpineda@xanum.uam.mx}
+\emailAdd{lopr@xanum.uam.mx}
+
+
+
+
+\abstract{We study primordial perturbations in Higgs–$R^2$ inflation in the presence of a non-minimal kinetic mixing between the Higgs and the scalaron. By performing a full numerical integration of the multifield background and linear perturbations, we identify distinct dynamical regimes controlled by the non-minimal coupling $\xi_h$. For $\xi_h \sim \mathcal{O}(0.1)$, the turning rate of the inflationary trajectory induces transient multifield effects that imprint localized features in the scalar power spectrum. In the limit $\xi_h\ll 1$, the adiabatic spectrum becomes featureless, but isocurvature modes fail to fully decay, leaving a residual contribution at the end of inflation. We compute CMB angular power spectra TT, TE, EE and show how these regimes yield distinct observational signatures, delineating the parameter space compatible with current bounds. Our results highlight that suppressing spectral features does not guarantee the elimination of isocurvature perturbations, placing non-trivial constraints on Higgs–$R^2$ multifield realizations and motivating future probes sensitive to primordial isocurvature.}
 
 
 
 \begin{document}
-
-
-\title{Generating isocurvature modes and primordial features in multi-field Higgs-$R^2$ inflation}
-\author{Flavio Pineda}
-%\affiliation{Physics Department, Universidad Aut\'onoma Metropolitana Iztapalapa P. O. Box 55-534, 09340 M\'exico, %CDMX., M\'exico}
-\email{fpineda@xanum.uam.mx (Corresponding author}
-\author{Luis O. Pimentel}
-\email{lopr@xanum.uam.mx )}
-    \affiliation{Departamento de Física, Universidad Aut\'onoma Metropolitana Iztapalapa P. O. Box 55-534, 09340 M\'exico, CDMX., M\'exico}
-%\affiliation{}
-%\author{i}
-%\email{}
-%\affiliation{}
-\date{\today}
-
-\begin{abstract}
-\lipsum[2]
-\end{abstract}
-
 \maketitle
-
 
 
 \section{Introduction}
 
-La inflación cósmica se ha convertido en \lipsum[1]
+Cosmic inflation has become the leading paradigm of early-universe cosmology, providing a natural explanation for the horizon problem and the origin of the primordial perturbations imprinted in the Cosmic Microwave Background (CMB) \cite{guth1981,Linde1982,Liddle2003}. In its simplest realization, inflation is driven by a single scalar field and predicts a nearly adiabatic and scale-invariant spectrum \cite{Stewart1993}, in excellent agreement with Planck observations \cite{planck2018x}. However, realistic high-energy theories, such as supersymmetry, Grand Unified Theories (GUTs), or string theory contain multiple scalar degrees of freedom. Multi-field inflation therefore arises naturally \cite{Wands2002}, allowing for isocurvature modes, non-trivial field-space geometries, and turning trajectories that can impact the primordial power spectrum \cite{Bartolo2001, Huston2012, Dimarco2003, MUKHANOV1998, Lalak2007,STAROBINSKY2001,Langlois1999,LANGLOIS2003}. These features may produce observable signatures, including localized departures from scale invariance or correlated isocurvature contributions and primordial non-Gaussianity \cite{Saenz2020,Chen_2010,Battefeld_2007, Bernardeau_2002, Iarygina_2024, Kaiser2013a, Elliston_2012}. Well-studied examples include models with non-minimal couplings \cite{Schutz2014,Kaiser2014,Kaiser2010}, kinetic mixing \cite{Braglia2020, Dimarco2003, DiMarco2005}, and scenarios involving heavy fields \cite{Achucarro2011,Sebastian2012, Gao2012}. Within this broad context, the Higgs-$R^2$ model stands out as a theoretically appealing multi-field inflation \cite{EMA2017,He2018,Wang2017,GUNDHI2020}. It links cosmic inflation to the Standard Model (SM) Higgs boson while simultaneously resolving the unitarity problem of Higgs inflation \cite{BEZRUKOV2008,SALVIO2015,EMA2017, GORBUNOV2019}. The addition of a curvature-squared term introduces an extra scalar degree of freedom and raises the cutoff scale to the Planck scale, thereby restoring perturbative control \cite{GORBUNOV2019}. Even though the model is often treated in an effective single-field limit \cite{Wang2017,He2018}, its true dynamics are intrinsically multi-field, governed by a curved field-space metric that mixes the Higgs and the scalaron. 
 
-A lo largo de este trabajo, usaremos la métrica de FLRW espacialmente plana
+The Higgs-$R^2$ model has been explored in a wide range of contexts, including preheating \cite{BEZRUKOV2019657,He2021, He2019, He2021tachionic}, gravitational particle production and primordial magnetogenesis \cite{Pineda2025, Durrer2022}, cosmological collider signatures \cite{Ema2024}, gravitational waves \cite{Kim2025}, primordial black-hole formation \cite{Cheong2021,Cheong_2022} and more recently in relation to small-scale CMB experiments \cite{Tanmoy2025}.
+In this work, we revisit the multi-field dynamics of Higgs-$R^2$ inflation, focusing on the region of parameter space where the single-field attractor description ceases to be valid. In particular, we study the regime where the non-minimal Higgs coupling is small, $\xi_h \sim 0.1$, such that no strong hierarchy between the fields exists. In this case, the inflationary trajectory may deviate from the valley and undergo transient turns as it evolves from the ridge at $h=0$ toward the minima \cite{GUNDHI2020}. These turns generate a non-zero bending rate $\eta_\perp$, which couples adiabatic and isocurvature perturbations and can leave distinctive signatures in the primordial spectrum, such as features or a suppression of power at large scales. Despite the growing interest in this model, the literature still lacks a systematic analysis of the simultaneous evolution of adiabatic and isocurvature modes, the role of transient turning trajectories, the emergence of features in $\mathcal{P}_\mathcal{R}(k)$, and their observable imprint on the CMB angular spectra.
+
+Our motivation is twofold. From a theoretical perspective, understanding the robustness of inflationary predictions when isocurvature modes are not suppressed is essential for assessing the predictivity of multi-field models. Observationally, the Planck 2018 data \cite{planck2018x} reveals intriguing anomalies at large angular scales, most notably a suppression of power in the quadrupole ($\ell = 2$) and octupole ($\ell = 3$) moments. While standard $\Lambda{\rm CDM}$ attributes this to cosmic variance, physical mechanisms producing localized features in the primordial power spectrum offer a compelling alternative explanation \cite{Contaldi2003,Jain2009,Chluba2015}. We show that the transient multi-field dynamics in Higgs-$R^2$ inflation naturally generate features in the primordial curvature spectrum at large-intermediate scales, offering a potential primordial origin for the low-$\ell$ suppression without relying on ad-hoc potentials. By performing a full numerical integration of the background and perturbations, we identify two qualitatively distinct regimes: one in which isocurvature modes survive until the end of inflation ($\xi_h \ll 1$), and one in which a transient turning induces features while ensuring that isocurvature is strongly suppressed by the end ($\xi_h \sim \mathcal{O}(0.1$)). We compute the resulting CMB TT, TE, and EE spectra and discuss their implications for current observations.
+
+This paper is organized as follows. In Section~\ref{sec2} we review the Higgs--$R^2$ model in the Einstein frame and study the background evolution. Section~\ref{sec3} discusses the evolution of linear perturbations. Section~\ref{sec4} presents the numerical results for the primordial spectra, and Section~\ref{sec5} explores the implications for the CMB observables. We summarize our conclusions in Section~\ref{sec6}. Throughout this work we assume a spatially flat FLRW background  
+
 
 \beq 
-\dif s^2 = -\dif t^2 + a^2(t) (\dif x^2 + \dif y^2 + \dif z^2)
+\dif s^2 = -\dif t^2 + a^2(t)\,(\dif x^2 + \dif y^2 + \dif z^2),
 \label{FLRW metric}
 \enq 
 
-y usamos unidades naturales tal que $c = 1$, $\hbar = 1$, $G = 1$ y $M_p = 1$.
+and use natural units with $c = \hbar = G = M_p = 1$.
+
+
+
+
+
 
 \section{Multi-field Higgs-$R^2$ inflation}
+\label{sec2}
 
- Nuestro punto de partida es el modelo Higgs-$R^2$ \cite{EMA2017, GORBUNOV2019, GUNDHI2020} en el marco de Jordan en su forma completa, es decir, la teoría de la inflación de Higgs \cite{BEZRUKOV2008} con un término $R^2$, cuya acción está dada por
+Our starting point is the Higgs-$R^2$ model \cite{EMA2017, GORBUNOV2019, GUNDHI2020} in the Jordan frame in its most general form, i.e., the theory of Higgs inflation \cite{BEZRUKOV2008} augmented by an $R^2$ term, whose action is given by
 
- \beq 
-    S_J[g_{\mu\nu}\,,\mathcal{H}] = \int \dif^4 x \sqrt{-g_J}\left[ \dfrac{1}{2}\left(1 + \dfrac{2\xi_h}{1}|\mathcal{H}|^2 \right) R_J + \xi_s R_J^2 - g_J^{\mu\nu}(D_\mu \mathcal{H})^\dagger (D_\nu \mathcal{H}) -\lambda|\mathcal{H}|^4 \right]\,,
- \enq 
+ \beq
+    S_J[g_{\mu\nu}\,,\mathcal{H}] = \int \dif^4 x \sqrt{-g_J}\left[ \dfrac{1}{2}\left(1 + 2\xi_h|\mathcal{H}|^2 \right) R_J + \xi_s R_J^2 - g_J^{\mu\nu}(D_\mu \mathcal{H})^\dagger (D_\nu \mathcal{H}) -\lambda|\mathcal{H}|^4 \right]\,,
+ \enq
 
+where the variables defined in the Jordan frame are denoted by the subscript $J$. The field $\mathcal{H}$ represents the Higgs doublet with a non-minimal coupling $\xi_h$, which is necessary for $\mathcal{H}$ to drive inflation, while $\lambda$ is the quartic coupling constant and $D_\mu\mathcal{H}$ is the covariant derivative of the SM Higgs sector, which includes interactions with the gauge fields:
 
-donde las variables definidas en el marco de Jordan las denotamos con un subóíndice $J$. El campo $\mathcal{H}$ es el doblete del campo de Higgs con un acoplamiento no mínimo $\xi_h$ , necesario para que $\mathcal{H}$ produzca inflación, mientras que $\lambda$ es la constante cuártica de acoplamiento y  $D_\mu\mathcal{H}$  es la derivada covariante del sector Higgs del SM, la cual incluye las interacciones con los campos de norma 
-
-\beq 
+\beq
 D_\mu\mathcal{H} = \left(\partial_\mu - \dfrac{ig}{2}\tau_a\,W^a{}_\mu  + \dfrac{ig'}{2}B_\mu\right)\mathcal{H}\,.
-\enq 
+\enq
 
-Los campos $W^a_\mu$ y $B_\mu$ representan los campos de norma de los grupos $SU(2)$ y $U(1)$, con sus respectivas constantes de acoplamiento $g$ y $g'$, mientras que $\tau_a$ son los generadores de $SU(2)$. Es usual definir el doblete de Higgs $\mathcal{H}$ en la norma unitaria tal que $\mathcal{H}$ esté parametrizado por un único campo $h$
+The fields $W^a_\mu$ and $B_\mu$ represent the gauge fields of the $SU(2)$ and $U(1)$ groups, with their respective coupling constants $g$ and $g'$, while $\tau_a$ are the $SU(2)$ generators. It is customary to define the Higgs doublet $\mathcal{H}$ in the unitary gauge such that $\mathcal{H}$ is parameterized by a single field $h$:
 
-\beq 
+\beq
 \mathcal{H} = \dfrac{1}{\sqrt{2}}\begin{pmatrix}
     0\\
     h + v_\mathrm{ew}
 \end{pmatrix}\,,
-\enq 
+\enq
 
-donde $v_\mathrm{ew} \approx 246\,\mathrm{GeV}$ es la escala de energía del sector electrodébil. En esta norma, y considerando que  $M_p = 2.18 \times10^{18}\,\mathrm{GeV}\gg v_\mathrm{ew}$, la acción del modelo se puede reescribir como \cite{EMA2017}
+where $v_\mathrm{ew} \approx 246\,\mathrm{GeV}$ is the electroweak energy scale. In this gauge, and considering that $h \gg v_\mathrm{ew}$, the action of the model can be rewritten as \cite{EMA2017}
 
-\beq 
+\beq
     S_J[g_{\mu\nu}\,,h] = \int \dif^4\sqrt{-g_J}\left[ \dfrac{1}{2}\left(1 +  \xi_h h^2\right)R_J + \xi_s R_J^2 - \dfrac{1}{2}g_J^{\mu\nu}(\partial_\mu h)(\partial_\nu h) - \dfrac{\lambda}{4}h^4  \right]\,,
     \label{Higgs-R2 action}
-\enq 
+\enq
 
-donde hemos omitido las interacciones con los campos de norma. Es bien sabido que este modelo es una extensión natural del modelo de inflación de Higgs que resuelve el problema de la constante de grande de acoplamiento \cite{GORBUNOV2019}. El modelo de Higgs necesita una constante de acoplamiento  $\xi_h \sim \mathcal{O}(10^4)$ para que el modelo sea compatible con los observables del CMB; sin embargo, el modelo sufre el problema del acoplamiento fuerte \cite{Barbon2009, Burgess2009, BEZRUKOV2008}, el cual consiste en lo siguiente: el campo de Higgs se acopla fuertemente en la escala electrodébil y pierde la unitaridad perturbativa muy por debajo de la escala habitual de Planck \cite{GORBUNOV2019}. La escala de energía es $\Lambda_\text{UV} = M_p/\xi_h$, lo cual hace cuestionable las predicciones del modelo. Para $\xi_h \sim \mathcal{O}(10^4)$, la escala de energía es del orden de $\Lambda_\text{UV} \sim 10^{14}$, que es menor que la escala de energía durante la inflación. Sin embargo, la inlcusión del término $R^2$ eleva la escala de energía del modelo hasta la escala de Planck de manera natural, recuperando el carácter perturbativo del modelo \cite{EMA2017,GORBUNOV2019}. El modelo \eqref{Higgs-R2 action} presenta dos grados de libertad: el campo $h$ y un grado de libertad escalar proveniente de $R^2_J$ conocido como escalarón, donde ambos campos son dinámicos y contribuyen a la historia de la expansión del universo. Dicha dinámica se puede entender de manera más sencilla reescalando la métrica $g_{\mu\nu}$  del espacio-tiempo via una transformación conforme $\Omega^2(x)$, para que la acción \eqref{Higgs-R2 action} adopte la forma estándar Einstein-Hilbert más una acción de dos campos escalares $\phi$ y $h$ \cite{Kaiser2010a}. 
+where we have omitted interactions with the gauge fields. It is well established that this model is a natural extension of Higgs inflation that solves the large coupling constant problem \cite{GORBUNOV2019}. The Higgs model requires a coupling constant $\xi_h \sim \mathcal{O}(10^4)$ to render the model compatible with CMB observables; however, it suffers from the strong coupling problem \cite{Barbon2009, Burgess2009, BEZRUKOV2008}. This problem arises because the Higgs field becomes strongly coupled at the electroweak scale, causing a loss of perturbative unitarity well below the usual Planck scale \cite{GORBUNOV2019}. The cutoff scale is $\Lambda_\text{UV} = M_p/\xi_h$, which casts doubt on the model's predictions. For $\xi_h \sim \mathcal{O}(10^4)$, the energy scale is of the order of $\Lambda_\text{UV} \sim 10^{14}$, which is lower than the energy scale during inflation. However, the inclusion of the $R^2$ term naturally raises the model's cutoff to the Planck scale, thereby restoring its perturbative nature \cite{EMA2017,GORBUNOV2019}. The model \eqref{Higgs-R2 action} features two degrees of freedom: the field $h$ and a scalar degree of freedom arising from $R^2_J$, known as the scalaron. Both fields are dynamic and contribute to the expansion history of the universe. This dynamics is more easily understood by rescaling the spacetime metric $g_{\mu\nu}$ via a conformal transformation $\Omega^2(x)$, so that the action \eqref{Higgs-R2 action} adopts the standard Einstein-Hilbert form plus an action for two scalar fields $\phi$ and $h$ \cite{Kaiser2010a}. The conformal transformation that allow us to write \eqref{Higgs-R2 action} in the Einstein frame is $\Omega^2(x) =e^{-\alpha \phi}$, with $\alpha = \sqrt{2/3}$ and $\phi$ being the scalaron field \cite{EMA2017}. The resulting action is
 
-La transformación conforme que permite escribir \eqref{Higgs-R2 action} en el marco de Einstein es $\Omega^2(x) =e^{-\alpha \phi}$, con $\alpha = \sqrt{2/3}$ y $\phi$ el grado de libertad proveniente de $R^2_J$ conocido como escalarón \cite{EMA2017}. La acción resulta 
-
-
-\beq 
+\beq
 S_J \to S_E = \int \dif^4 x\sqrt{-g}\left[\dfrac{1}{2}R - \dfrac{1}{2}g^{\mu\nu}(\partial_\mu \phi)(\partial_\nu \phi) - \dfrac{1}{2}e^{-\alpha\phi}g^{\mu\nu}(\partial_\mu h)(\partial_\nu h) - V(\phi\,,h)\right ]\,,
     \label{accion marco einstein}
-\enq 
+\enq
 
-donde el potencial escalar $V(\phi\,,h)$ depende de ambos campos en el marco de Einstein, y está definido como
+where the scalar potential $V(\phi\,,h)$ depends on both fields in the Einstein frame and is defined as
 
-\beq 
+\beq
 V(\phi\,,h) = e^{-2\alpha\phi}\left[\dfrac{1}{16\xi_s}\left(e^{\alpha\phi} - 1 - \xi_h\,h^2 \right)^2 + \dfrac{\lambda}{4}\,h^4\right]\,.
     \label{potential Einstein}
 \enq
 
-El término cinético no canónico de $h$ define  una métrica del espacio de campos no-trivial $G_{IJ}$ con componentes no nulas
+The non-canonical kinetic term of $h$ defines a non-trivial field-space metric $G_{IJ}$ with non-vanishing components
 
-\beq 
+\beq
     G_{\phi\phi} = 1\,,\quad G_{hh} = e^{-\alpha\phi}\,.
     \label{field space metric}
-\enq 
+\enq
 
-Este tipo de modelos con un término cinético no canónico y dos campos escalares es bien conocido y ha sido ampliamente estudiado en la literatura \cite{Lalak2007, STAROBINSKY2001, Dimarco2003,DiMarco2005, Tolley_2010, Cremonini2011}, explorando diferentes formas sencillas del potencial inflacionario. Con esto nos referimos a potenciales inflacionarios que usualmente se pueden factorizar como suma de potenciales de un solo campo $V(\phi\,,\chi) = U(\phi) + W(\chi)$, o como producto de potenciales $V(\phi\,,\chi) = U(\phi)W(\chi)$. El potencial \eqref{potential Einstein} es más complicado en este sentido, ya que no es factorizable ni como suma ni como producto de potenciales individuales que solo dependan de $\phi$ o $h$.
-Además, este modelo presenta 3 parámetros: $\lambda$, $\xi_h$ y $\xi_s$. De acuerdo con \cite{EMA2017}, existen tres casos que producen inflación en la escala de energía $\phi \gg M_p$:
+This type of model, featuring a non-canonical kinetic term and two scalar fields, is well known and has been widely studied in the literature \cite{Lalak2007, STAROBINSKY2001, Dimarco2003, DiMarco2005, Tolley_2010, Cremonini2011}, exploring various simple forms of the inflationary potential. By this, we refer to inflationary potentials that can typically be factorized as a sum of single-field potentials $V(\phi\,,\chi) = U(\phi) + W(\chi)$, or as a product $V(\phi\,,\chi) = U(\phi)W(\chi)$. The potential \eqref{potential Einstein} is more involved in this sense, as it is not factorizable either as a sum or a product of individual potentials depending solely on $\phi$ or $h$.
+Furthermore, this model presents three parameters: $\lambda$, $\xi_h$, and $\xi_s$. According to \cite{EMA2017}, there are three cases that yield inflation at the energy scale $\phi \gg M_p$:
 
 \begin{enumerate}
     \item $\xi_h >0\,,\xi_s >0\,, \lambda >0$
@@ -165,120 +150,112 @@ Además, este modelo presenta 3 parámetros: $\lambda$, $\xi_h$ y $\xi_s$. De ac
     \item $\xi_h <0\,, \xi_s > 0\,, \lambda < 0$
 \end{enumerate}
 
-In the three cases, the inflationary dynamics is effectively reduce to a single field one for $\xi_h \gg 1$, since the isocurvature mode is heavy enough and we can integrated out. This inflationary dynamics reduction can be seen under the valley-approach that we briefly show in the appendix \ref{appendix1}.
-The former case corresponds to a mixture between Higgs field $h$ and scalaron $\phi$; the inflaton potential is given by \eqref{effective potential}.  In addition, to reproduce the CMB normalization the parameters should fulfill the condition
+In all three cases, the inflationary dynamics effectively reduces to a single-field scenario for $\xi_h \gg 1$, as the isocurvature mode becomes heavy enough to be integrated out. This reduction in inflationary dynamics can be understood via the valley-approach, which we briefly demonstrate in Appendix \ref{appendix1}.
+The first case corresponds to a mixture between the Higgs field $h$ and the scalaron $\phi$; the inflaton potential is given by \eqref{effective potential}. 
+In the second case, inflation is driven solely by the scalaron $\phi$, while the third corresponds to the metastable EW vacuum. On the other hand, if $\xi_s \gg \xi_h^2/\lambda$, inflation is of the $R^2$-type, whereas in the opposite case, inflation is predominantly driven by the Higgs field $h$ \cite{EMA2017}. However, if no hierarchy exists among the parameters, it is ensured that both $\phi$ and $h$ contribute to the inflationary dynamics and the generation of perturbations for $\xi_h \gg 1$. This case is known as the standard parameter space of the Higgs-$R^2$ model, where multi-field effects are known to be absent \cite{ Wang2017,He2018, GUNDHI2020}.
 
-\beq 
-    4\xi_s + \dfrac{\xi_h^2}{\lambda} \simeq 2\times 10^{9}
-    \label{CMB constraint}
-\enq 
-
-
-In the second case, inflation is caused solely by the scalaron $\phi$, and the last one corresponds to the metastable EW vacuum. 
-
-Por otro lado, si $\xi_s \gg \xi_h^2/\lambda$, la inflación es tipo $R^2$, mientras que en el caso contrario la inflación es impulsada predominantemente por el campo de Higgs $h$ \cite{EMA2017}. Sin embargo, si no existe ninguna jerarquía en los parámetros, se asegura que tanto $\phi$ como $h$ contribuyen a la dinámica de la inflación y a la generación de las perturbaciones para $\xi_h \gg 1$. Este caso se conoce como espacio estándar de parámetros del modelo Higgs-$R^2$, y es sabido que los efectos multi-campo están ausentes \cite{ Wang2017, GUNDHI2020}.
-En este tabajo exploramos el caso $\xi_h >0\,,\xi_s >0\,, \lambda >0$ con un espacio de parámetros que cumple $\xi_h \sim \lambda \xi_s \lesssim \mathcal{O}(0.1)$ de tal manera que los modos de isocurvarura y sus características primordales no sean despreciables durante la inflación \cite{Ema_2024}. Esta condición  permite que el modo de isocurvarura no sea muy pesado para ser excitado durante la inflación, haciendo relevante su evolución para las perturbaciones primordales. El valor de los parámetros, además de ser relevantes para la generación de modos de isocurvarura, tienen un impacto en la forma del potencial \eqref{potential Einstein}. En la Fig. \ref{fig1} podemos ver la estructura del potencial para dos distintos espacios de parámetros. Para un análisis más detallado sobre la forma del potencial y sus consecuencias en las trayectorias del espacio de campos, recomendamos \cite{GUNDHI2020}.
+In this work, we explore the case $\xi_h >0\,,\xi_s >0\,, \lambda >0$ with a parameter space satisfying $\xi_h \sim \lambda \xi_s \lesssim \mathcal{O}(0.1)$, such that isocurvature modes and their primordial features are not negligible during inflation. This condition ensures that the isocurvature mode is not too heavy to be excited during inflation, making its evolution relevant for primordial perturbations. The values of the parameters, beyond playing a role in the generation of isocurvature modes, impact the shape of the potential \eqref{potential Einstein}. In Fig. \ref{fig1}, we display the structure of the potential for two different parameter spaces. For a more detailed analysis of the potential shape and its consequences on field-space trajectories, we recommend Ref. \cite{GUNDHI2020}.
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.48\linewidth]{Figures/potential1.png}\quad 
+    \includegraphics[width=0.48\linewidth]{Figures/potential1.png}\quad
      \includegraphics[width=0.48\linewidth]{Figures/potential_xi_0.3.pdf}
-    \caption{Potencial escalar $V(\phi\,,h)/M_p^4$ en el marco de Einstein. Left panel: Potencial \eqref{potential Einstein} usando el espacio de parámetros estándar $\lambda = 0.13$, $\xi_h = 4000  $ y $\xi_s \simeq 10^8 $. El potencial presenta una estructura de dos valles y una cresta en $h=0$. Right panel: El mismo potencial \eqref{potential Einstein} pero para un acoplamiento $\xi_h = 0.3$. Vemos que la estructura de los valles y de la cresta del potencial desaparecen en el límite $\xi_h \ll 1$.}
+    \caption{Scalar potential $V(\phi\,,h)/M_p^4$ in the Einstein frame. Left panel: Potential \eqref{potential Einstein} using the standard parameter space $\lambda = 0.13$, $\xi_h = 4000$ and $\xi_s \simeq 10^8 $. The potential exhibits a two-valley structure and a ridge at $h=0$. Right panel: The same potential \eqref{potential Einstein} but for a coupling $\xi_h = 0.1$. We observe that the valley and ridge structure disappears in the limit $\xi_h \ll 1$.}
     \label{fig1}
 \end{figure}
 
 
+\subsection{Background dynamics}
 
-\subsection{Background analysis}
+To characterize the system's evolution in multi-field inflation models, it is customary to employ a covariant field-space formalism \cite{Achucarro2011, Gong2011, Gong2017, KARAMITSOS2018}. The equations of motion for the fields $\phi, h$ are derived directly from \eqref{accion marco einstein}. Using the covariant field-space approach and the metric \eqref{FLRW metric}, these are written as
 
-Para caracterizar la evolución del sistema en modelos multi-campo de inflación, se suele utilizar un enfoque covariante  del espacio de campos  \cite{Achucarro2011, Gong2011, Gong2017, KARAMITSOS2018}. Las ecuaciones de movimiento  de los campos $\phi\,,h$ se deducen directamente de \eqref{accion marco einstein}, que usando el enfoque covariante del espacio de campos y la métrica \eqref{FLRW metric}, se escriben como
-
-\beq 
+\beq
     D_t\dot{\phi}^I + 3H\dot{\phi}^I + G^{IJ}V_J = 0\,,
     \label{EoM covariant}
-\enq 
+\enq
 
+where $D_t$ is the covariant directional derivative along $t$, defined acting on an arbitrary field-space vector $A^I$ as $D_t A^I = \dot{\phi}^J \nabla_J A^I = \dot{A}^I + \Gamma^I{}_{JK}\,\dot{\phi}^J\,A^K$, while the Christoffel symbols are evaluated in terms of $G_{IJ}$ and its derivatives via the expression $\Gamma^I{}_{JK} = G^{IM}(\partial_J G_{KM} + \partial_K G_{JM} -\partial_M G_{JK} )/2$, with $\partial_J G_{KM} = \partial G_{KM}/\partial \phi^J$. For the metric \eqref{field space metric}, the non-vanishing components of $\Gamma^I{}_{JK}$ are
 
-donde $D_t$ es la derivada covariante direccional en $t$, la cual se define sobre un vector arbitrario del espacio de campos $A^I$ como $D_t A^I = \dot{\phi}^J \nabla_J A^I = \dot{A}^I + \Gamma^I{}_{JK}\,\dot{\phi}^I\,A^K$, mientras que los símbolos de Christoffel están evaluados en términos de $G_{IJ}$ y sus derivadas a través de la expresión $\Gamma^I{}_{JK} = G^{IM}(\partial_J G_{KM} + \partial_K G_{JM} -\partial_M G_{JK} )/2$
-, donde $\partial_J G_{KM} = \partial G_{KM}/\partial \phi^J$. Para la métrica \eqref{field space metric}, las componentes no nulas de $\Gamma^I{}_{JK}$ son 
-
-\beq 
+\beq
 \Gamma^\phi{}_{h h} = \dfrac{\alpha}{2}e^{-\alpha\phi}\,,\quad \Gamma^h{}_{\phi h} = \Gamma^h{}_{h \phi} = -\dfrac{\alpha}{2}\,.
 \label{Christoffel}
-\enq 
+\enq
 
-
-En un espacio-tiempo dado por la métrica de FLRW \eqref{FLRW metric}, y suponiendo que los campos escalares son homogéneos, $\phi = \phi(t)$, $h = h(t)$, las ecuaciones de movimiento \eqref{EoM covariant} que satisfacen los campos $(\phi\,,h)$ están dadas por
-
+In a spacetime given by the FLRW metric \eqref{FLRW metric}, and assuming that the scalar fields are homogeneous, $\phi = \phi(t)$ and $h = h(t)$, the equations of motion \eqref{EoM covariant} satisfied by the fields $(\phi, h)$ are given by
 
 \begin{align}
- \ddot{\phi} + 3H\dot{\phi} + V_\phi = -\dfrac{\alpha}{2}e^{-\alpha\phi}\dot{h}\,,\quad 
-    \ddot{h} + (3H -\alpha\dot{\phi})\dot{h} + e^{\alpha\phi}\,V_h = 0\,
+ \ddot{\phi} + 3H\dot{\phi} + V_\phi = -\dfrac{\alpha}{2}e^{-\alpha\phi}\dot{h}\,,\quad
+    \ddot{h} + (3H -\alpha\dot{\phi})\dot{h} + e^{\alpha\phi}\,V_h = 0\,,
     \label{EoM system}
 \end{align}
 
-donde, como es usual, $\dot{} = \partial_t$, los sub-índices del potencial indican derivación y $H(t)$ es el parámetro de Hubble dado por $H= \dot{a}/a$, siendo $a(t)$ el factor de escala. La evolución y dinámica de $H$ está dado por las ecuaciones de Friedmann 
+where, as usual, an overdot denotes $\partial_t$, the subscripts on the potential indicate derivatives, and $H(t)$ is the Hubble parameter given by $H= \dot{a}/a$, with $a(t)$ being the scale factor. The evolution and dynamics of $H$ are governed by the Friedmann equations:
 
 \begin{align}
-\dot{H} = - \dfrac{1}{2} \dot{\sigma}^2 \,,\quad 
+\dot{H} = - \dfrac{1}{2} \dot{\sigma}^2 \,,\quad
  3 H^2 = \dfrac{1}{2}\dot{\sigma}^2 + V(\phi\,,h)\,,
  \label{Friedmann ecs}
 \end{align}
 
+where $\dot{\sigma}^2 = G_{IJ}\dot{\phi}^I\dot{\phi}^J =  \dot{\phi}^2 + e^{-\alpha\phi}\dot{h}^2$. The numerical solution of Eqs. \eqref{EoM system} and \eqref{Friedmann ecs}, with an appropriate choice of initial conditions, provides the background trajectory. To discuss the features of said trajectory and the field-space geometry, it is useful to define the tangent vector $T^I$ and the normal vector $N^I$ to the trajectory as $T^I = \dot{\phi}^I/\dot{\sigma}$ and $N^I =\sqrt{\text{det} G}\,\epsilon_{IJ} T^J$, where $\epsilon_{IJ}$ is the fully antisymmetric Levi-Civita symbol, and $\det G$ is the determinant of the metric \eqref{field space metric}. Explicitly, for the model \eqref{Higgs-R2 action}, these vectors are given by
 
-donde $\dot{\sigma}^2 = G_{IJ}\dot{\phi}^I\dot{\phi}^J =  \dot{\phi}^2 + e^{-\alpha\phi}\dot{h}^2$. La solución numérica de \eqref{EoM system}, \eqref{Friedmann ecs} con una adecuada elección de las condiciones iniciales, proporciona la trayectoria del background.  Para discutir las características de dicha trayectoria y de la geometría del espacio de campos, es útil definir los vectores tangente $T^I$ y normal $N^I$ a la trayectoria como $T^I = \dot{\phi}^I/\dot{\sigma}$ y $N^I =\sqrt{\text{det} G}\,\epsilon_{IJ} T^J$, donde $\epsilon_{IJ}$ es el símbolo de Levi-Civita totalmente antisimétrico, y $\det G$ es el determinante de la métrica \eqref{field space metric}.  De manera explícita, estos vectores para el modelo \eqref{Higgs-R2 action} están dados por 
-
-
-\beq 
+\beq
     T^I = \dfrac{(\dot{\phi}\,,\dot{h})}{\dot{\sigma}}\,,\quad N^I = \dfrac{e^{\alpha\phi/2}}{\dot{\sigma}}\,( -e^{-\alpha\phi}\dot{h}\,,\dot{\phi})\,.
     \label{orthogonal vectors}
-\enq 
+\enq
 
+The vector $T^I$ defines the direction parallel to the trajectory (adiabatic) of any field-space vector $A^I$, while $N^I$ defines the first normal component (isocurvature) of $A^I$ \cite{Achucarro2011}. In this way, these vectors allow us to decompose any vector $A^I$ into its adiabatic component $A_\sigma$ and isocurvature component $A_s$ as $A^I = A_\sigma T^I + A_s N^I$. Furthermore, the vector $T^I$ offers an alternative way to write the equation of motion \eqref{EoM covariant} as two independent equations: $\ddot{\sigma} + 3H\dot{\sigma} + V_\sigma = 0$ and $D_t T^I = - H\eta_\perp N^I$, where we have defined $V_\sigma = T^I V_I$ and $V_N = N^I V_I$ as the projections of $\partial_I V = V_I$ along the adiabatic and isocurvature directions, respectively. The parameter $\eta_\perp$ is known as the turning rate and indicates the rate of change of $T^I$ along the $N^I$ direction.  If $\eta_\perp = 0$, the vectors \eqref{orthogonal vectors} remain covariantly constant along the classical trajectory, whereas if $\eta_\perp \neq 0$, the vectors $T^I$ and $N^I$ can rotate to the right or left, depending on the sign of $\eta_\perp$. It is important to note that if the trajectory $\phi^I(t)$ is a geodesic in field space ($D_t \dot{\phi}^I = 0$), the turning rate vanishes. Moreover, this parameter is responsible for sourcing the mixing between the adiabatic and isocurvature modes of the primordial perturbations and parameterizes the interaction between them; thus, for geodesic motion in field space, both perturbations evolve independently (see Section \ref{sec3}).
 
-El vector $T^I$ define la dirección paralela a la trayectoria (adiabática) de cualquier vector $A^I$ del espacio de campos, mientra que $N^I$ define la primera componente normal (isocurvatura) de $A^I$. De esta manera, estos vectores nos permiten descomponer cualquier vector $A^I$ en sus componentes adiabática $A_\sigma$ y de isocurvarura $A_s$ como $A^I = A_\sigma T^I + A_s N^I$. Por otro lado, el vector $T^I$ ofrece una alternativa de escribir la ecuación de movimiento \eqref{EoM covariant} en dos ecuaciones independientes  $\ddot{\sigma} + 3H\dot{\sigma} + V_\sigma = 0$ y $D_t T^I = - H\eta_\perp N^I$, donde hemos definido $V_\sigma = T^I V_I$, $V_N = N^I V_I$ como las proyecciones de $\partial_I V = V_I$ en sus direcciones adiabática y de isocurvatura. El parámetro $\eta_\perp$ se conoce como bending e indica el cambio de $T^I$ en la dirección $N^I$.  
-Si $\eta_\perp = 0$, los vectores \eqref{orthogonal vectors} permanencen covariantemente sin cambios a lo largo de la trayectoria clásica, mientras que si $\eta_\perp \neq 0$, los vectores $T^I$ y $N^I$ pueden rotar a la derecha o a la izquierda, dependiendo del signo de $\eta_\perp$. Es importante notar que si la trayectoria $\phi^I(t)$ es una geodésica en el espacio de campos $D_t \dot{\phi}^I = 0$, el bending se anula. Además, dicho parámetro es el encargado de mezclar los modos adiabático y de isocurvatura de las perturbaciones primordiales, y parametriza la interacción entre dichos modos, por lo que si tenemos movimientos geodésicos en el espacio de campos, ambas perturbaciones evolucionan de manera independiente (ver la sección \ref{perturbations}).
+Characterizing the dynamics of this type of model involves a slow-roll analysis analogous to that of single-field inflation models. We can define the slow-roll parameters as
 
-La caracterización de la dinámica de este tipo de modelos involucra un análisis slow-roll tal y como los modelos de inflación de un solo campo. Podemos definir los parámetros slow-roll como 
-
-\beq 
+\beq
     \epsilon = -\dfrac{\dot{H}}{H^2}\,,\quad \eta^I = - \dfrac{D_t\,\dot{\phi}^I}{H\dot{\sigma}}\,,
     \label{SR parameters}
 \enq
 
-
-donde $\epsilon$ es el parámetro slow-roll usual, mientras que $\eta^I$ es un vector en el espacio de campos que contiene información sobre el segundo parámetro slow-roll. Descomponemos $\eta^I$ en sus componentes adiabáticas y de isocurvarura $\eta^I = \eta_{||} T^I + \eta_\perp N^I$ donde $\eta_{||} = \eta^I T_I$ y $\eta_\perp = \eta^I N_I$ están dados por 
+where $\epsilon$ is the usual slow-roll parameter, while $\eta^I$ is a vector in field space containing information about the second slow-roll parameter. We decompose $\eta^I$ into its adiabatic and isocurvature components $\eta^I = \eta_{||} T^I + \eta_\perp N^I$, where $\eta_{||} = \eta^I T_I$ and $\eta_\perp = \eta^I N_I$ are given by
 
 \beq
     \eta_{||} = -\dfrac{\ddot{\sigma}}{H\dot{\sigma}}\,, \quad \eta_\perp = \dfrac{V_N}{H\dot{\sigma}}\,.
     \label{second SR}
 \enq
 
-Es claro que la componente $\eta_{||}$ es la contraparte del segundo parámetro slow-roll de los modelos de un solo campo, mientras que $\eta_\perp$ es el bending que aparece la ecuación $D_t T^I = - H\eta_\perp N^I$. 
-Las condiciones slow-roll en este tipo de modelos  están dadas por $\epsilon\ll 1\,,\quad |\eta_{||}|\ll 1$, lo cual equivale a $\ddot{\sigma} \ll |H\dot{\sigma}|$. Estas condiciones no implican un bending $\eta_\perp \ll 1$, por lo que $\eta_\perp \gtrsim 1$ es compatible con la aproximación slow-roll. Con la forma explícita de $N^I$, podemos construir la proyección de la derivada covariante del potencial \eqref{potential Einstein} en la dirección de isocurvarura
+It is clear that the component $\eta_{||}$ is the counterpart of the second slow-roll parameter in single-field models, while $\eta_\perp$ is the turning rate parameter appearing in the equation $D_t T^I = - H\eta_\perp N^I$.
+The slow-roll conditions in these models are given by $\epsilon\ll 1$ and $|\eta_{||}|\ll 1$, which is equivalent to $\ddot{\sigma} \ll |H\dot{\sigma}|$. These conditions do not imply a small turning rate $\eta_\perp \ll 1$; therefore, $\eta_\perp \gtrsim 1$ is compatible with the slow-roll approximation. Using the explicit form of $N^I$, we can construct the projection of the gradient of the potential \eqref{potential Einstein} along the isocurvature direction:
 
 \begin{align}
-    V_N = N^I V_I  = \dfrac{e^{\alpha\phi/2}}{\dot{\sigma}}(V_h \dot{\phi} - e^{-\alpha\phi}\dot{h} V_\phi)
+    V_N = N^I V_I  = \dfrac{e^{\alpha\phi/2}}{\dot{\sigma}}(V_h \dot{\phi} - e^{-\alpha\phi}\dot{h} V_\phi)\,.
     \label{V_N}
 \end{align}
 
-Esto permite escribir el bending del modelo como 
-
-\beq 
-\eta_\perp = \dfrac{e^{\alpha\phi/2}}{H\dot{\sigma}^2}\left( V_h \dot{\phi} - e^{-\alpha\phi}\,\dot{h}V_\phi \right)\,.
-\label{bending}
-\enq 
-
-Dentro de valley-approach, el bending y los vectores ortonormales a la trayectoria del espacio de campos están dados en en \eqref{valley approach}. En el espacio de parámetros usual y dentro de valley-approach, el bending es despreciable, pero para el espacio de parámetros que cumple $\xi_h \sim \lambda\xi_s$, el bendig es del orden de $\eta_\perp \sim \mathcal{O}(0.1)$. Sin embargo, para un adecuado entendimiento de la evolución del backgrond, es conveniente hacer un análisis numérico tanto de las variables del background como de las perturbaciones. Para ello es conveniente usar el número de e-folds $N_e$ como parámetro temporal dada la relación $\dif N_e = H \dif t$. En este caso, las ecuaciones \eqref{EoM system} y \eqref{Friedmann ecs} toman la forma 
 
 \begin{figure}[htp]
-     \centering
-     \includegraphics[width = 0.48 \textwidth]{Figures/hubbleparameter1.pdf}
-     \quad
-     \includegraphics[width = 0.48 \textwidth]{Figures/bending1.pdf}
-     \caption{Mostramos la evolución del parámetro de Hubble, $H(N_e)$, y del bending, $\eta_\perp(N_e)$, en función del número de e-folds $N_e$, obtenida al resolver las ecuaciones de fondo \eqref{efolds system}. Para ello, consideramos el espacio de parámetros $\xi_h = 0.1$, $\lambda = 10^{-10}$ y $\xi_s = 4\times10^8$ y las condiciones iniciales $\phi_0 = 5.7 M_p$, $h_0(\phi_0) = 0.096 M_p$. Se observa que el bending es del orden de $\mathcal{O}(0.1)$ y casi constante durante la inflación, lo que lo hace relevante para el análisis posterior de los modos $Q_s$.
-     }
-     \label{Fig2}
+    \centering
+    \includegraphics[width=0.48\textwidth]{Figures/eps_H1.pdf}
+    \quad
+    \includegraphics[width=0.48\textwidth]{Figures/eta1.pdf}\\[0.3cm]
+    \includegraphics[width=0.48\textwidth]{Figures/trajectory1.pdf}
+    \quad
+    \includegraphics[width=0.48\textwidth]{Figures/bg1.pdf}
+
+    \caption{
+    Evolution of the slow-roll parameter $\epsilon_H$, the turning rate parameter $\eta_\perp$, and the parameter $\eta_{||}$,
+    along with the field-space trajectory and background variables
+    ($H$, $\phi$, $h$) as a function of the number of e-folds $N_e$.
+    We consider the parameter set $\xi_h = 0.1$, $\lambda = 10^{-10}$, and $\xi_s = 4\times10^8$,
+    with initial conditions $\phi_0 = 5.7$ and $h_0(\phi_0) = 10^{-4}$ in Planck units.
+    It is observed that, although inflation begins in a slow-roll regime ($\epsilon_H \ll 1$), the initial conditions produce transient peaks associated with turns in the field-space trajectory.}
+    \label{Fig2}
 \end{figure}
+
+This allows us to write the model's turning rate as
+
+\beq
+\eta_\perp = \dfrac{e^{\alpha\phi/2}}{H\dot{\sigma}^2}\left( V_h \dot{\phi} - e^{-\alpha\phi}\,\dot{h}V_\phi \right)\,.
+\label{turning rate}
+\enq
+
+Within the valley-approach, the turning rate and the orthonormal vectors to the field-space trajectory are given in \eqref{valley approach}. In the standard parameter space and within the valley-approach, the turning rate is negligible,  but for the parameter space satisfying $\xi_h \sim \lambda\xi_s$, the turning rate is of the order $\eta_\perp \sim \mathcal{O}(0.1)$. Nevertheless, for a proper understanding of the background evolution, it is convenient to perform a numerical analysis of both the background variables and the perturbations. To this end, it is convenient to use the number of e-folds $N_e$ as the time parameter, given the relation $\dif N_e = H \dif t$. In this case, equations \eqref{EoM system} and \eqref{Friedmann ecs} take the form
 
 
 
@@ -289,72 +266,65 @@ Dentro de valley-approach, el bending y los vectores ortonormales a la trayector
     \label{efolds system}
 \end{align}
 
-donde $' = \partial_{N_e}$, mientras que el parámetro slow-roll $\epsilon$ en términos del número de e-folds se escribe como 
+where a prime denotes $\partial_{N_e}$, while the slow-roll parameter $\epsilon$ in terms of e-folds is written as
 
-\beq 
+\beq
     \epsilon = - \dfrac{H'}{H} = \dfrac{1}{2}(\phi'^2 + e^{-\alpha\phi}h'^2)\,,
     \label{efolds SR}
 \enq
 
-y el bending \eqref{bending} en función de $N$ está dado por 
+and the turning rate \eqref{turning rate} as a function of $N_e$ is given by
 
 \beq
     \eta_\perp = \dfrac{e^{\alpha\phi/2}}{\sigma_N^2}\left( V_h\phi' - e^{-\alpha\phi}\,V_\phi h' \right)\,,
-    \label{bending efolds}
+    \label{turning rate efolds}
 \enq
 
+where $\sigma_N^2 = H^2(\phi'^2 + e^{-\alpha\phi}h'^2)$. Once the model parameters and suitable initial conditions have been specified, we can proceed to numerically integrate the system of equations \eqref{efolds system} to obtain the relevant background quantities.
 
-donde $\sigma_N^2 = H^2(\phi'^2 + e^{-\alpha\phi}h'^2)$.  Una vez que hayamos especificado los parámetros del modelo y las condiciones iniciales adecuadas, podemos proceder a integrar numéricamente el sistema de ecuaciones \eqref{efolds system} para llegar a las cantidades de fondo relevantes. Con dichas cantidades, podemos proceder a analizar las perturbaciones primordiales del modelo. 
-Siguiendo a \cite{Fumagalli2021}, el análisis y evolución de la perturbaciones primordiales a orden lineal queda determinada por tres funciones: el parámetro de Hubble $H(N)$, el bending $\eta_\perp(N)$ y la masa del modo de isocurvarura $m_\text{iso}^2(N)$.
-En la Fig. \ref{Fig2} mostramos la evolución del parámetro de Hubble $H(N)$ y del bending $\eta_\perp$ para el espacio de parámetros que cumple $\xi_h \sim \lambda\xi_s$. 
-
-
-
-
-
+With these quantities, we can proceed to analyze the primordial perturbations of the model.
+Following Ref. \cite{Fumagalli2021}, the analysis and evolution of linear primordial perturbations are determined by three functions: the Hubble parameter $H(N)$, the turning rate $\eta_\perp(N)$, and the mass of the isocurvature mode $m_\text{iso}^2(N)$. In Fig. \ref{Fig2}, we display the numerical solution for the background; specifically, we show the behavior of $\epsilon_H(N)$, $\phi(N)$, $h(N)$, $H(N)$, $\eta_\perp(N)$, and $\eta_{||}(N)$ given the initial condition $\phi_0 = 5.7$ in Planck units. The initial condition of the field $h$ determines the starting position on the potential. If $h_0 = h_0^\text{valley}$ is given by condition \eqref{valley}, inflation begins exactly within one of the potential valleys; if $h_0 \ll 1$, multi-field effects associated with the fall from the ridge at $h=0$ towards one of the valleys are guaranteed \cite{GUNDHI2020}. As an example, we show the background for the initial condition $h_0 = 10^{-4}M_p$. We can observe some important features in the background behavior.
+Around $N_e \simeq 25-35$, a turn in the field-space trajectory occurs, which is reflected in the parameters $\eta_\perp$ and $\epsilon_H$. The small increase in $\epsilon_H$ represents a temporary deviation from the slow-roll regime associated with this turn.
+Although inflation is not interrupted ($\epsilon_H \ll 1$ at all times), this behavior can leave observable imprints on the primordial power spectrum of $\mathcal{R}_k$ (see Section~\ref{powerspectrum}).
+This type of behavior is typical of potentials with local features ("bumps" or "dips") designed to induce ultra-slow-roll phases ($\epsilon_H \to 0$) and amplify the primordial spectrum to values of $\mathcal{P}_\mathcal{R}(k) \sim 10^{-2} - 10^{-1}$, which are necessary for the formation of primordial black holes (PBHs) \cite{Mishra_2020}. Such mechanisms can also occur in multi-field models with transient turns in field space \cite{Braglia2020, Cheong2021, Cheong_2022}; however, in our case, the change in trajectory is not sharp enough to amplify the spectrum up to the PBH production regime.
 
 
 
 
-\section{Primordial perturbations
-\label{perturbations}}
 
-Cuando se estudia las perturbaciones primordiales a orden lineal o cuadrático en modelos multi-campo de inflación, es recomendable adoptar un enfoque covariante respecto a transformaciones de norma en el espacio de campos. Este formalismo fue desarrollado en detalle en \cite{Gong2011} para un espacio de campos arbitrario. 
+\section{Primordial perturbations}
+\label{sec3}
 
-En este artículo despreciamos las perturbaciones vectoriales y tensoriales, y nos enfocamos principalmente en las perturbaciones primordiales escalares. 
-Desde un punto de vista covariante, la idea es utilizar la perturbación covariante $Q^I$ en lugar de $\delta\phi^I(t\,,\mathbf{r}) = \phi^I(t\,,\mathbf{r}) - \bar{\phi}^I(t)$, donde $\bar{\phi}^I(t)$ es la trayectoria clásica del background que satisface \eqref{EoM covariant}. El valor de $\bar{\phi}^I$ y $\phi^I$ en algún punto fijo $P$ del espacio de campos puede conectarse mediante una única geodésica parametrizada por un parámetro $\varepsilon$ que relaciona el valor inicial de $\phi^I$ y el vector tangente en $P$. Las condiciones iniciales se fijan en $\varepsilon = 0$, tal que
+When studying primordial perturbations at linear or quadratic order in multi-field inflation models, it is advisable to adopt a covariant approach with respect to gauge transformations in field space. This formalism was developed in detail in Ref. \cite{Gong2011} for an arbitrary field space. In this paper, we neglect vector perturbations and focus primarily on scalar primordial perturbations.
+From a covariant perspective, the strategy is to employ the covariant perturbation $Q^I$ instead of the coordinate perturbation $\delta\phi^I(t\,,\mathbf{r}) = \phi^I(t\,,\mathbf{r}) - \bar{\phi}^I(t)$, where $\bar{\phi}^I(t)$ is the classical background trajectory satisfying \eqref{EoM covariant}. The values of $\bar{\phi}^I$ and $\phi^I$ at a fixed spacetime point $P$ can be connected via a unique geodesic in field space parameterized by $\varepsilon$, which relates the initial value of $\phi^I$ to the tangent vector at $P$. The initial conditions are set at $\varepsilon = 0$, such that
 
-
-\beq 
+\beq
     \phi^I (\varepsilon = 0) = \bar{\phi}^I\,,\quad Q^I = \left.\dfrac{\dif \phi^I}{\dif \varepsilon}\right|_{\varepsilon = 0} \,.
     \label{IC field space}
-\enq 
+\enq
 
+At second order in perturbations, one finds the expansion relating $Q^I$ to the perturbation $\delta\phi^I$:
 
- A segundo orden en las perturbaciones, uno encuentra el desarrollo que relaciona $Q^I$ con la perturbación $\delta\phi^I$
-
-
-\beq 
-    \delta\phi^I = \phi^I-\bar{\phi}^I = Q^I - \dfrac{1}{2}\,\Gamma^I{}_{JK}\,Q^
-    JQ^K  + \cdots\,.
+\beq
+    \delta\phi^I = \phi^I-\bar{\phi}^I = Q^I - \dfrac{1}{2}\,\Gamma^I{}_{JK}\,Q^J Q^K  + \cdots\,.
     \label{inflationary perturbation}
-\enq 
+\enq
 
-Dado que tanto $\delta\phi^I$ como $Q^I$ son vectores del espacio de campos, podemos descomponerlos en sus componentes adiabática $Q_\sigma$ y de isocurvatura $Q_s$ como $Q^I = Q_\sigma T^I+ Q_s N^I$, donde a priori ambas componentes son dinámicas. Por otro lado, el estudio de las perturbaciones del espacio-tiempo y la mezcla con $Q^I$ es más sencillo si se usa la forma ADM \cite{Arnowitt2008, Maldacena2003} de la métrica \eqref{FLRW metric}
+Since both $\delta\phi^I$ and $Q^I$ are field-space vectors, we can decompose them into their adiabatic component $Q_\sigma$ and isocurvature component $Q_s$ as $Q^I = Q_\sigma T^I+ Q_s N^I$, where a priori both components are dynamic. On the other hand, the study of spacetime perturbations and their mixing with $Q^I$ is simplified by using the ADM form \cite{Arnowitt2008, Maldacena2003} of the metric \eqref{FLRW metric}:
 
-\beq 
+\beq
 \dif s^2 = -N^2\dif \phi^2 + \gamma_{ij}\,(N^i\dif \phi+\dif x^i)(N^j\dif \phi + \dif x^j)\,,
 \label{ADM metric}
-\enq 
+\enq
 
-donde $\dif \phi$ es una parametrización temporal, $N$ es la función lapso, $N^i$ es el vector desplazamiento y $\gamma_{ij}$ es la 3-métrica inducida sobre la hipersuperficie $\Sigma_t$. La idea detrás del formalismo ADM en el estudio de las perturbaciones cosmológicas es desarrollar a segundo orden la acción \eqref{accion marco einstein} en serie de potencias de las perturbaciones. Este enfoque fue introducido por Maldacena \cite{Maldacena2003} para modelos de inflación de un solo campo. Como $N$ y $N^i$ no son variables dinámicas, la 3-métrica $\gamma_{ij}$ contiene toda la información física del sistema. Al fijar una parametrización temporal y elegir el vector desplazamiento, estamos fijando $N$ y $N^i$, y eso se logra al escoger una norma. En inflación y teoría de perturbaciones, es muy común utilizar la norma espacialmente plana tal que $\gamma_{ij}^\mathrm{flat} = a^2(t)\delta_{ij}$ donde toda la dinámica está contenida en la perturbación $\delta \phi^I$. Esta norma ha sido ampliamente usada en la literatura \cite{Sebastian2012, Bartolo2001, Wands2002, LANGLOIS2003, Langlois2008}, y tiene la ventaja de que las componentes de la perturbación $\delta\phi^I$ son variables de Mukhanov-Sasaki (MS), por lo que cumplen una ecuación tipo MS \cite{Sasaki1996, MUKHANOV1998, Wands2002, Gordon2000}. Sin embargo, en este trabajo decidimos trabajar con la norma comóvil,  la cual se define como \cite{Saenz2020, Seery2005, Lyth2005, Lyth2005a}
+where $\dif \phi$ is a time parameterization, $N$ is the lapse function, $N^i$ is the shift vector, and $\gamma_{ij}$ is the induced 3-metric on the hypersurface $\Sigma_t$. The rationale behind the ADM formalism in the study of cosmological perturbations is to expand the action \eqref{accion marco einstein} to second order in a power series of the perturbations. This approach was introduced by Maldacena \cite{Maldacena2003} for single-field inflation models. Since $N$ and $N^i$ are non-dynamical Lagrange multipliers, the 3-metric $\gamma_{ij}$ contains the physical information of the system. By fixing a time parameterization and choosing the shift vector, we fix $N$ and $N^i$, which is achieved by choosing a gauge. In inflation and perturbation theory, it is common practice to employ the spatially flat gauge, where $\gamma_{ij}^\mathrm{flat} = a^2(t)\delta_{ij}$, and all dynamics are contained within the perturbation $\delta \phi^I$. This gauge has been widely used in the literature \cite{Sebastian2012, Bartolo2001, Wands2002, LANGLOIS2003, Langlois2008} and has the advantage that the components of the perturbation $\delta\phi^I$ are Mukhanov-Sasaki (MS) variables, thus satisfying an MS-type equation \cite{Sasaki1996, MUKHANOV1998, Wands2002, Gordon2000}. However, in this work, we choose to work with the comoving gauge, defined as \cite{Saenz2020, Seery2005, Lyth2005, Lyth2005a}:
 
-\beq 
+\beq
 \gamma_{ij}^\mathrm{com} = a^2(t)e^{2\mathcal{R}}\delta_{ij}\,,\quad T_I Q^I = 0\,.
 \label{3-metric}
-\enq 
+\enq
 
-donde $\mathcal{R}$ es la perturbación de curvatura comóvil invariante de norma \cite{MUKHANOV1992}. La característica principal de esta norma es que la componente adiabática de $Q^I$ es cero, pero la parte de isocurvatura es $Q_s = N_I Q^I$. Por consiguiente, en la norma comóvil las perturbaciones son $\mathcal{R}$ y $Q_s$. La acción a segundo orden en estas variables se escribe como 
+where $\mathcal{R}$ is the gauge-invariant comoving curvature perturbation \cite{MUKHANOV1992}. The main feature of this gauge is that the adiabatic component of $Q^I$ vanishes, but the isocurvature part is $Q_s = N_I Q^I$. Consequently, in the comoving gauge, the perturbations are $\mathcal{R}$ and $Q_s$. The action at second order in these variables is written as
 
 \begin{multline}
      S^{(2)} = \int \dif^4 x\, a^3\left[ \epsilon\left(\dot{\mathcal{R}}^2-a^{-2}\delta^{ij}\partial_i\mathcal{R}\partial_j\mathcal{R}\right) + \dfrac{1}{2}\left(\dot{Q}_s^2-a^{-2}\delta^{ij}\partial_iQ_s \partial_j Q_s- m_\mathrm{iso}^2Q_s^2\right)\right. \\
@@ -362,64 +332,16 @@ donde $\mathcal{R}$ es la perturbación de curvatura comóvil invariante de norm
         \label{second order action}
 \end{multline}
 
-donde $\epsilon$ es el parámetro slow-roll dado en \eqref{SR parameters}, mientras que $m^2_\text{iso}$ es la masa efectiva del modo de isocurvarura $Q_s$, la cual está dada por 
+where $\epsilon$ is the slow-roll parameter given in \eqref{SR parameters}, while $m^2_\text{iso}$ is the effective mass of the isocurvature mode $Q_s$, given by
 
-\beq 
+\beq
     m_\mathrm{iso}^2 = N^I N^J \nabla_I V_J + H^2\epsilon\,R_\text{fs}-(H\eta_\perp)^2\,,
     \label{iso mass}
-\enq 
-
-donde $R_\text{fs} = -1/3$  es el escalar de curvatura del espacio de campos del modelo en unidades de $M_p$, definido a través de $G_{IJ}$ \eqref{field space metric}. El primer término  $V_{NN} = N^I N^J \nabla_I V_J$ representa la contribución usual de masa dado el potencial \eqref{potential Einstein}, mientras que el segundo término representa una contribución de la geometría curva del espacio de campos. El tercer término contribuye de manera negativa a la masa, y es una correción del giro de la trayectoria clásica inducida por \eqref{bending}. Vemos que incluso si el bendig es cero, los efectos multi-campo no desaparecen, pues el segundo término de \eqref{iso mass} proveniente de la geometría del espacio de campos es no nulo y  tiene efectos relevantes en la producción de los modos $Q_s$.  Las ecuaciones de movimiento de las perturbaciones $\mathcal{R}$ y $Q_s$ se obtienen variando la acción \eqref{second order action}, las cuales están dadas en términos del tiempo cósmico $t$ y en el espacio de Fourier por las expresiones 
-
-\beq 
-    \ddot{\mathcal{R}}_k + (3 + \delta)H\dot{\mathcal{R}}_k  + \dfrac{k^2}{a^2}\mathcal{R}_k = -\dfrac{2 H \eta_\perp}{\sqrt{2\epsilon}} [\dot{Q_s} + (3-\xi_\perp - \eta_{||} )HQ_s]
-    \label{R ec.}
-\enq 
-
-\beq
-    \ddot{Q}_s + 3H\dot{Q}_s + \left(\dfrac{k^2}{a^2} + m_\mathrm{iso}^2\right) Q_s = 2 H \eta_\perp \sqrt{2\epsilon} \dot{\mathcal{R}}_k\,,
-    \label{Qs ec.}
-\enq 
-
-donde $\delta = 2(\epsilon - \eta_{||})$ y  $\xi_\perp = -\dot{\eta}_\perp/H\eta_\perp$. La acción \eqref{second order action} y las ecuaciones \eqref{R ec.}, \eqref{Qs ec.} son exactas, es decir, no hay ningún tipo de aproximación de por medio para su deducción. 
-
-Los modos $\mathcal{R}_k$, $Q_s$ se acoplan a través del bending $\eta_\perp$.  En términos generales, podemos integrar los modos $\mathcal{R}_k$ y $Q_s$ a escalas super-Hubble ($k\ll aH$) para $\eta_\perp \neq 0$. La ecuación para el modo de isocurvatura $Q_s$ resulta
-
-
-\beq  
-    \ddot{Q}_s + 3H\dot{Q}_s + m_\text{eff}^2 Q_s \simeq 0\,,
 \enq
 
-donde la masa efectiva está dada por $m_\text{eff}^2 = m_\text{iso}^2 + 4(H\eta_\perp)^2$, con $m_\text{iso}^2$ dado por \eqref{iso mass}. En este caso el bendig contribuye siempre de manera positiva a la masa del modo $Q_s$, contribuyendo como fuente del modo adiabático tal que $\dot{\mathcal{R}_k}\simeq - \sqrt{2}H\eta_\perp Q_s/\sqrt{\epsilon}$.  Para $\eta_\perp = 0$, es claro que el modo $\dot{\mathcal{R}}_k$ decae exponencialmente y por tanto $\mathcal{R}_k$ converge a un valor constante, que es el resultado  obtenido en los modelos de inflación de un solo campo. Vale la pena mencionar que la masa del modo $Q_s$ no depende de la evolución super-Hubble del modo adiabático, por lo que se puede calcular de manera independiente. Entoces la masa $m_\text{iso}^2$ es una función de las variables del background, y contiene toda la información física relevante para  $Q_s$. 
-
-\begin{figure}[htp]
-    \centering
-    \includegraphics[width = 0.48 \textwidth]{Figures/isomass1.pdf}
-    \includegraphics[width = 0.48 \textwidth]{Figures/isomass2.pdf}
-    \caption{We show the isocurvature mass \eqref{iso mass} for a space of parameters that fulfill $\xi_h \sim \lambda \xi_s$ in function of number of e-folds $N_e$. In both panels we set $\lambda = 10^{-10}$ and $\xi_s = 4\times 10^{8}$}
-    \label{fig3}
-\end{figure}
-
-Sin embargo, para un tratamiento completo que permita seguir la evolución completa de los modos $Q_s$ y $\mathcal{R}_k$, conviene adoptar un análisis numérico de las perturbaciones. Como en el caso del background, es más eficiente integrar numéricamente las ecuaciones \eqref{R ec.} y \eqref{Qs ec.} en términos de $N_e$:
-
-\beq
-    \mathcal{R}''_k + (3 + \epsilon - 2\eta_{||})\mathcal{R}'_k + \left(\dfrac{k}{aH}\right)^2 \mathcal{R}_k = -\dfrac{2\eta_\perp}{\sqrt{2\epsilon}}[Q_s' + (3-\xi_\perp - \eta_{||})Q_s]\,,
-\enq
+where $R_\text{fs} = -1/3$ is the field-space Ricci scalar of the model in units of $M_p$, defined via $G_{IJ}$ \eqref{field space metric}. The first term $V_{NN} = N^I N^J \nabla_I V_J$ represents the usual mass contribution given the potential \eqref{potential Einstein}:
 
 
-\beq
-    Q_s'' + (3-\epsilon)Q_s' + \left[\left(\dfrac{k}{aH}\right)^2 + \dfrac{m_\text{iso}^2}{H^2} \right]Q_s = 2\sqrt{2\epsilon}\, \eta_\perp\mathcal{R}'_k\,,
-\enq
-
-donde $m_\text{iso}^2 = m_\text{iso}^2(N_e)$, $H = H(N_e)$ y $\eta_\perp = \eta_\perp(N_e)$. En la próxima sección procedemos a resolver estas ecuaciones con condiciones iniciales tipo Bunch-Davies.
-
-
-
-
-
-\subsection{Isocurvature mass}
-
-La masa del modo de isocurvarura $Q_s$ juega un papel fundamental en el análisis y evolución de la perturbaciones, pues como hemos visto, los efectos multi-campo están presentes incluso si el bendig es cero. Analicemos detenidamente la expresión \eqref{iso mass}. Como hemos mencionado, tenemos 3 términos que contribuyen a la masa $m_\text{iso}^2$: el término usual del potencial $V_{NN}$, una contribución geométrica intrísteca del espacio de campos dado por $R_\text{fs}$ y una contribución del bending. El término $V_{NN}$ está dado explícitamente por \cite{He2018}
 
 \begin{align}
    \nonumber V_{NN} &= N^I N^J \nabla_I V_J = N^I N^J(\partial_I \partial_J V - \Gamma^K{}_{IJ}\partial_K V) \\[0.3cm]
@@ -427,90 +349,396 @@ La masa del modo de isocurvarura $Q_s$ juega un papel fundamental en el análisi
     \label{usual mass term}
 \end{align}
 
-
-el cual depende de las derivadas del potencial \eqref{potential Einstein} y de la dinámica de fondo. Sin embargo, se puede simplificar consdierablemente si tomamos en cuenta el valley-approach \eqref{valley} y los resultados \eqref{valley approach}. Sustituyendo explícitamente la forma de $N^I$, el potencial y tomando en cuenta \eqref{valley}, obtenemos
+which depends on the derivatives of the potential \eqref{potential Einstein} and the background dynamics. However, this can be considerably simplified if we take into account the valley-approach \eqref{valley} and the results in \eqref{valley approach}. By explicitly substituting the form of $N^I$ and the potential, and taking \eqref{valley} into account, we obtain
 
 \beq
     V_{NN} \simeq \dfrac{\xi_h(24\lambda\xi_s + \xi_h(1 + 6\xi_h))}{\lambda\xi_s}\,H^2\,.
-\enq 
+\enq
+
+The second term in \eqref{iso mass} represents a contribution from the curved geometry of the field space, while the third term yields a negative contribution to the mass and is a correction due to the turn of the classical trajectory induced by \eqref{turning rate}. We observe that even if the turning rate is zero, multi-field effects do not vanish, as the second term in \eqref{iso mass} arising from the field-space geometry is non-trivial. Under the approximation \eqref{valley approach}, the mass $m_\text{iso}^2$ becomes
 
 
-En esta aproximación, la masa \eqref{iso mass} resulta 
 
 \beq
     \dfrac{m_\text{iso}^2}{H^2} \simeq \dfrac{\xi_h(24\lambda\xi_s + \xi_h(1 + 6\xi_h))}{\lambda\xi_s} -\dfrac{\epsilon}{3} - \dfrac{\tilde{\xi}^2}{1 + \tilde{\xi}^2}\,,
+    \label{iso mass valley}
 \enq
 
-donde $\tilde{\xi}^2 = \xi_h/6(\xi_h^2 + 4\lambda\xi_s)$. Podemos observar que en valley- approach, la masa del modo $Q_s$ toma una forma simplificada, y la razón $m_\text{iso}^2/H^2$ es constante. Esto puede ayudar a la búsqueda de soluciones analíticas de las ecuación para $Q_s$. Por otro lado, si $\xi_h \gg 1$, el modo de isocurvatura es pesado y el bending es despreciable, por lo que se puede ignorar la evolución de $Q_s$. Si tomamos $\xi_h \sim \lambda\xi_s$, el valor de $m_\text{iso}^2 $ es cercano a $H^2$, consecuentemente el modo $Q_s$ se vuelve ligero y el bending se vuelve significante. En este escenario, la aproximación single-field falla y se debe adoptar un escenario quasi-single field inflation \cite{Chen_2010,chen2010prd}, o resolver numéricamente las ecuaciones de los modos $\mathcal{R}_k$, $Q_s$, yendo más allá de la aproximación single-field slow roll \cite{Wang2017}.
+where $\tilde{\xi}^2 = \xi_h/6(\xi_h^2 + 4\lambda\xi_s)$. We observe that in the valley-approach, the mass of the $Q_s$ mode takes a simplified form, and the ratio $m_\text{iso}^2/H^2$ is effectively constant. This facilitates the search for analytical solutions to the equation for $Q_s$. On the other hand, if $\xi_h \gg 1$, the isocurvature mode is heavy and the turning rate is negligible, allowing us to ignore the evolution of $Q_s$. If we take $\xi_h \sim \lambda\xi_s$, the value of $m_\text{iso}^2$ is close to $H^2$; consequently, the $Q_s$ mode becomes light and the turning rate becomes significant. In this scenario, the single-field approximation fails, and one must adopt a quasi-single field inflation (QSFI) scenario \cite{Chen_2010,chen2010prd}, or numerically solve the equations for the modes $\mathcal{R}_k$ and $Q_s$, going beyond the single-field slow-roll approximation \cite{Wang2017}.
+
+
+\subsection{Evolution of adiabatic and isocurvature perturbations}
+
+The equations of motion for the perturbations $\mathcal{R}$ and $Q_s$ are obtained by varying the action \eqref{second order action}. In terms of cosmic time $t$ and in Fourier space, these are given by:
+
+\beq
+    \ddot{\mathcal{R}}_k + (3 + \delta)H\dot{\mathcal{R}}_k  + \dfrac{k^2}{a^2}\mathcal{R}_k = -\dfrac{2 H \eta_\perp}{\sqrt{2\epsilon}} [\dot{Q_s} + (3-\xi_\perp - \eta_{||} )HQ_s]
+    \label{R ec.}
+\enq
+
+
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width = 0.48 \textwidth]{Figures/adiabaticmode1.pdf}
+    \includegraphics[width = 0.48 \textwidth]{Figures/isomode1.pdf} \\[0.3cm]
+    \includegraphics[width = 0.48 \textwidth]{Figures/adiabaticmode5.pdf}
+    \quad
+    \includegraphics[width = 0.48 \textwidth]{Figures/isomode5.pdf}
+
+    \caption{Numerical solution of equations \eqref{R equation efolds} and \eqref{Qs equation efolds} for the space parameter $\xi_h= 0.1$ (top panel) and $\xi_h= 10^{-9}$ (bottom panel) with $\lambda = 10^{-10}$ and $\xi_s = 4\times 10^8$ fixed. We also fixed the initial conditions to $\phi_0 = 5.7$ and $h_0 = 10^{-4}$ in Planck units. The vertical dashed line indicates horizon crossing for the pivot scale $k_* = 0.05\,\text{Mpc}^{-1}$.}
+    \label{fig3}
+\end{figure}
+
+
+
+\beq
+    \ddot{Q}_s + 3H\dot{Q}_s + \left(\dfrac{k^2}{a^2} + m_\mathrm{iso}^2\right) Q_s = 2 H \eta_\perp \sqrt{2\epsilon} \dot{\mathcal{R}}_k\,,
+    \label{Qs ec.}
+\enq
+
+where $\delta = 2(\epsilon - \eta_{||})$ and $\xi_\perp = -\dot{\eta}_\perp/H\eta_\perp$. The action \eqref{second order action} and equations \eqref{R ec.} and \eqref{Qs ec.} are exact; that is, no approximations were made in their derivation. Generally speaking, we can integrate the modes $\mathcal{R}_k$ and $Q_s$ on super-Hubble scales ($k\ll aH$) for $\eta_\perp \neq 0$. The equation for the isocurvature mode $Q_s$ becomes
+
+\beq
+    \ddot{Q}_s + 3H\dot{Q}_s + m_\text{eff}^2 Q_s \simeq 0\,,
+    \label{Qs SH evo}
+\enq
+
+where the effective mass is given by $m_\text{eff}^2 = m_\text{iso}^2 + 4(H\eta_\perp)^2$, with $m_\text{iso}^2$ defined in \eqref{iso mass}. In this case, the turning rate parameter always makes a positive contribution to the mass of the $Q_s$ mode, acting as a source for the adiabatic mode such that $\dot{\mathcal{R}_k}\simeq - \sqrt{2}H\eta_\perp Q_s/\sqrt{\epsilon}$. For $\eta_\perp = 0$, it is clear that the mode $\dot{\mathcal{R}}_k$ decays exponentially, and thus $\mathcal{R}_k$ converges to a constant value, recovering the standard single-field inflation result. 
+It is worth noting that the mass of the $Q_s$ mode does not depend on the super-Hubble evolution of the adiabatic mode, so it can be calculated independently. Thus, the mass $m_\text{iso}^2$ is solely a function of the background variables and contains all the relevant physical information for $Q_s$. 
+
+To visualize this behavior and track the full evolution of the $\mathcal{R}_k$ and $Q_s$ modes on super-Hubble scales, it is convenient to perform a numerical analysis of the perturbations. As with the background dynamics, it is more efficient to numerically integrate equations \eqref{R ec.} and \eqref{Qs ec.} in terms of $N_e$:
+
+\beq
+    \mathcal{R}''_k + \left(1 - \epsilon + 2\dfrac{\dif \log z}{\dif N} \right)\mathcal{R}'_k + \left(\dfrac{k}{aH}\right)^2 \mathcal{R}_k = -\dfrac{2\eta_\perp}{\sqrt{2\epsilon}}[Q_s' + (3-\xi_\perp - \eta_{||})Q_s]\,,
+    \label{R equation efolds}
+\enq
+
+\beq
+    Q_s'' + (3-\epsilon)Q_s' + \left[\left(\dfrac{k}{aH}\right)^2 + \dfrac{m_\text{iso}^2}{H^2} \right]Q_s = 2\sqrt{2\epsilon}\, \eta_\perp\mathcal{R}'_k\,,
+    \label{Qs equation efolds}
+\enq
+
+where $z = a\sqrt{2\epsilon}$, with $\epsilon$ given by \eqref{efolds SR}. We impose the Bunch-Davies vacuum as the initial condition for the modes $\mathcal{R}_k$ and $Q_s$, taking into account that the Mukhanov-Sasaki variables $u_k$ and $v_k$ are defined as $u_k = z\mathcal{R}_k$ and $v_k = a Q_s$. One must ensure that for each mode, the perturbations are initially deep inside the horizon ($k \gg aH$). If $N_\text{hc}$ is the e-fold corresponding to the horizon crossing of the mode, $k = aH$, we start the evolution 5 e-folds earlier, i.e., $N_\text{ini} = N_\text{hc} - 5$. This guarantees that for each mode $k$, the perturbations are well within the horizon at the start of the integration.
+In terms of the number of e-folds, the initial conditions for $\mathcal{R}_k$ and $Q_s$ are given by
 
 
 
 
-\section{Isocurvature perturbations}
-\label{{sec. 4}}
+\beq
+    \mathcal{R}_k(N_\text{ini}) = \dfrac{1}{z(N_\text{ini})\sqrt{2k}}\,,\quad Q_s(N_\text{ini}) = \dfrac{1}{a_0\sqrt{2k}}\,,
+    \label{BD vacuum}
+\enq
 
-En esta sección mostramos los resultados analíticos y numéricos de la evolución del modo $Q_s$ y $\mathcal{R}_k$, tomando en cuenta los efectos multi-campo a través de la masa $m_\text{iso}^2$ y del bending $\eta_\perp$. Procedemos a resolver las ecuaciones \eqref{R ec.} ,\eqref{Qs ec.} en dos escenarios: para geodesic motion $\eta_\perp = 0$ y para el caso donde el bending es del orden de $\eta_\perp \sim \mathcal{O}(10^{-1})$. El primer caso se puede resolver analíticamente, pues las perturbaciones evolucionan de manera independiente a orden lineal. 
-
-
-
-
-\subsection{Geodesic motion}
-
-For geodesic motions $\eta_\perp = 0$, both modes decouple, so the $Q_s$ modes cannot transfer power to the $\mathcal{R}_k$ adiabatic modes, making it easier to find analytical solutions. Bajo la aproximación slow-roll y tomando 
+where $a_0 = a(N_\text{ini})$ is the value of the scale factor at $N_\text{ini}$. We separate the real and imaginary parts of equations \eqref{R equation efolds} and \eqref{Qs equation efolds}, as well as the initial conditions \eqref{BD vacuum}, to achieve greater numerical stability in the solution. In Fig.~\ref{fig3}, we display the evolution of the perturbations $\mathcal{R}_k$ and $Q_s$ as a function of $N_e$ for the pivot scale $k_* = 0.05\,\text{Mpc}^{-1}$ and for two  space parameters $\xi_h = 0.1$ and $\xi_h = 10^{-9}$. As observed for $\xi_h = 0.1$, the mode $\mathcal{R}_k$ continues to evolve after horizon crossing due to the turning rate $\eta_\perp$ in field space, until it eventually freezes out. This evolution is driven by the coupling between the $\mathcal{R}_k$ and $Q_s$ modes via the turning rate parameter $\eta_\perp$. This transfer from the $Q_s$ mode is consistent with the previous discussion. In contrast, the isocurvature mode $Q_s$ evolves after crossing and is exponentially suppressed as a consequence of its effective mass $m_\text{iso}^2 \gtrsim H^2$, limiting its late-time contribution as a source for $\mathcal{R}_k$.
+For the case $\xi_h = 10^{-9}$, the situations is identical to the single-field case: the adiabatic perturbation  freezes out after horizon crossing since there is no coupling with isocurvature mode $Q_s$. 
 
 
 
+\section{Primordial power spectra}
+\label{sec4}
+
+We have mentioned that the background behavior shown in Fig.~\ref{Fig2} triggers multi-field effects, which are reflected in the evolution of the primordial perturbations $\mathcal{R}_k$ and $Q_s$ on super-Hubble scales (see Fig.~\ref{fig4}). In particular, these effects can generate additional features in the primordial spectrum, depending on the value of the constant coupling $\xi_h$.  Although the variables $\mathcal{R}_k$ and $Q_s$ are convenient for integrating the perturbation equations, it is more useful to express the results in terms of the dimensionless isocurvature perturbation
+
+\begin{equation}
+    \mathcal{S}_k \equiv \frac{H}{\dot{\sigma}}\, Q_s\,,
+\end{equation}
+
+which allows for a direct comparison with observational literature. Super-Hubble evolution induces a correlation between the adiabatic mode $\mathcal{R}_k$ and the isocurvature mode $\mathcal{S}_k$. Therefore, the primordial spectrum is characterized by three functions:
+
+\begin{equation}
+ \mathcal{P}_{\mathcal R}(k) = \frac{k^3}{2\pi^2}\,|\mathcal{R}_k|^2, \qquad
+ \mathcal{P}_{\mathcal S}(k) = \frac{k^3}{2\pi^2}\,|\mathcal{S}_k|^2, \qquad
+ C_{\mathcal{RS}}(k) = \frac{k^3}{2\pi^2}\,{\rm Re}\!\left(\mathcal{R}_k \mathcal{S}_k^\ast\right).
+ \label{powerspectrum}
+\end{equation}
+
+The quantity $C_{\mathcal{RS}}(k)$ is known as the \emph{cross-correlation spectrum} and quantifies the degree of correlation between both modes. From the adiabatic and isocurvature spectra, we can define the relative isocurvature fraction
+
+\begin{equation}
+    \beta_{\rm iso}(k) =
+    \frac{\mathcal{P}_{\mathcal S}(k)}
+         {\mathcal{P}_{\mathcal R}(k) + \mathcal{P}_{\mathcal S}(k)}\,,
+    \label{beta_iso}
+\end{equation}
+
+which can be compared with the most recent observational limits from Planck~\cite{planck2018x}. Additionally, the correlation between modes is parameterized via the correlation angle
+
+\begin{equation}
+    \cos\Delta =
+    \frac{C_{\mathcal{RS}}}
+         {\sqrt{\mathcal{P}_{\mathcal R}\,\mathcal{P}_{\mathcal S}}}\,,
+         \label{croos angle}
+\end{equation}
+
+which takes values in the interval $(-1,1)$ for each mode $k$. It is customary in the literature to evaluate these quantities at three representative scales: $k_{\rm low} = 0.002\,{\rm Mpc}^{-1}$, $k_* = 0.05\,{\rm Mpc}^{-1}$, and $k_{\rm high} = 0.1\,{\rm Mpc}^{-1}$, the same scales employed by the Planck analysis~\cite{planck2018x}. The presence of a non-zero cross-spectrum is a purely multi-field feature: the transfer $\mathcal{S}_k\!\to\!\mathcal{R}_k$ on super-Hubble scales is controlled by the turning rate parameter $\eta_\perp$, as follows from the evolution equation for $\dot{\mathcal{R}}_k$. Therefore, both the amplitude and shape of $C_{\mathcal{RS}}$ act as direct tracers of the field-space trajectory geometry.  Observationally, a non-zero value of $C_{\mathcal{RS}}$ implies that the primordial spectrum cannot be described solely by the adiabatic and isocurvature amplitudes, but requires a relative phase between the modes. This effect can modify the CMB angular power spectra in specific ways through linear interference between the adiabatic and isocurvature terms, an aspect we will discuss in Sec.~\ref{sec5} using the obtained primordial spectrum as input for Boltzmann codes such as \texttt{CLASS} \cite{class} \footnote{The public code can be found in the repository \url{https://github.com/lesgourg/class_public.git}.}.
 
 \subsection{Numerical results}
 
+Based on the numerical solutions for the background (Fig.~\ref{Fig2}) and perturbations (Fig.~\ref{fig4}), we evaluate the primordial spectrum at the end of inflation, defined by the e-fold $N_{\rm end}$ such that $\epsilon_H(N_{\rm end}) = 1$. For each mode $k$, we identify the horizon crossing time $N_{\rm hc}$ via the condition $k = aH$, while $N_{\rm CMB}$ denotes the e-fold corresponding to the pivot scale $k_* = 0.05\,\mathrm{Mpc}^{-1}$, which we fix it in $N_{\rm CMB} = 50$ for all the cases. In this way, each $k$ value is uniquely associated with a crossing instant during the inflationary evolution. To encompass both the observable CMB scales and the modes exiting the horizon in the final stages of inflation, we construct a logarithmic grid of 1000 $k$ values in the interval $[k_{\rm min},k_{\rm max}]$, where $k_{\rm min} = aH(N_{\rm hc}-7)$ and $k_{\rm max} = aH(N_{\rm end}-4)$.
+This range covers from $k\sim 10^{-6}\,\mathrm{Mpc}^{-1}$ to $k\sim 10^{19}\,\mathrm{Mpc}^{-1}$ and ensures that the power spectrum calculation incorporates modes experiencing the $\mathcal{S}_k\!\rightarrow\!\mathcal{R}_k$ transfer throughout all dynamic stages of the model. We evaluate Eq. \eqref{powerspectrum} at the end of inflation for each mode $k$; unlike the single-field case, it is not evaluated at horizon crossing because the power spectrum undergoes super-Hubble evolution for the parameter space of interest. This guarantees that the perturbation $\mathcal{R}_k$ has frozen out and that $Q_s$ exhibits the expected exponential decay.
+Our approach covers two important cases: $\xi_h\ll 1$ and $\xi_h \sim \mathcal{O}(0.1)$; in both instances, we fix $\lambda = 10^{-10}$ and $\xi_s = 4\times 10^{8}$. The initial condition is also set to $h_0 = 10^{-4} M_p$. Our results in this paper for the background, primoridal perturbations and the power spectrum can be produced by our numerical code which is available in GitHub repository. \footnote{\url{https://github.com/fpineda94/Higgs-R-2-inflation.git}.} 
+
+
+\subsubsection{Case $\xi_h \ll 1$}
+
+This scenario simplifies both the isocurvature mass $m_\text{iso}^2$ and the turning rate $\eta_\perp$ within one of the valleys. As discussed in Ref.~\cite{GUNDHI2020}, the potential loses its two-valley structure, which degenerates into a single valley centered at $h = 0$. Consequently, the dynamics may commence within the valley or precisely on the ridge, from where the field eventually oscillates and falls into the valley towards the potential minimum at $(0,0)$. Within the valley, the turning rate vanishes ($\eta_\perp \to 0$) for $\xi_h \ll 1$, as shown in Appendix \ref{valley approach}, while the mass of the $Q_s$ mode is given by
+
+\beq
+    \dfrac{m_\text{iso}^2}{H^2} \simeq -\dfrac{\epsilon}{3}
+\enq
+
+in accordance with Eq. \eqref{iso mass valley}. Thus, the mass remains light and negative during inflation. This causes the $Q_s$ mode to grow on super-Hubble scales ($k \ll aH$). On the other hand, the fact that $\eta_\perp \simeq 0$ in this parameter space renders the perturbations statistically independent as long as this condition holds, since the generation of correlations and the energy transfer from the isocurvature to the curvature mode require the perturbations to be coupled via $\eta_\perp$. However, isocurvature modes are produced and survive until the end of inflation, owing to the lightness of the $Q_s$ field. Consequently, both $\mathcal{R}_k$ and $\mathcal{S}_k$ evolve independently throughout the entire inflationary period. This behavior is displayed in Fig.~\ref{fig4}. The top-left panel displays the evolution of the primordial spectra $\mathcal{P}_\mathcal{R}(k)$, $\mathcal{P}_\mathcal{S}(k)$, and $\mathcal{P}_\mathcal{T}(k)$ as a function of the number of e-folds $N_e$, evaluated at the pivot scale $k_* = 0.05\,\text{Mpc}^{-1}$. At horizon crossing, the power spectrum of $\mathcal{R}_k$ freezes out as expected (since $\eta_\perp \simeq 0$), but $\mathcal{P}_\mathcal{S}(k)$ is not suppressed at the end of inflation, and its contribution remains non-zero. This is because the effective mass of the $Q_s$ mode remains light throughout the evolution, in agreement with our analysis. The tensor spectrum remains practically unaltered, as there is no coupling between scalar and tensor degrees of freedom at linear order in perturbations.
+The top-right panel shows the primordial power spectrum at the end of inflation. As observed, the curvature power spectrum $\mathcal{P}_\mathcal{R}(k)$ exhibits no features; at large scales, its amplitude is of the order of $10^{-9}$, while at small scales, it presents a suppression in magnitude. On the other hand, the isocurvature power spectrum is of the order of $10^{-11}$. The bottom panels display the isocurvature fraction $\beta_{\rm iso}$ (left) and the cross-correlation $\cos\Delta$ (right) as a function of e-folds. The cross-correlation vanishes because the turning rate is negligible in this parameter space, but the isocurvature fraction is non-zero at the end of inflation, reaching a value of $\beta_{\rm iso} \approx 0.0101$ at the pivot scale $k_* = 0.05\,{\rm Mpc}^{-1}$. 
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width = 0.48 \textwidth]{Figures/powerspectrum_efolds5.pdf}\quad
+     \includegraphics[width = 0.48 \textwidth]{Figures/PS_adiabatic5.pdf}\vspace{0.2cm}
+     \includegraphics[width = 0.48 \textwidth]{Figures/beta_iso_xi_1e-9.pdf}\vspace{0.2cm}
+     \includegraphics[width = 0.48 \textwidth]{Figures/cosDelta_xi_1e-9.pdf}
+
+
+    \caption{Primordial power spectrum for adiabatic (left panel) and isocurvature (right panel) perturbations evaluated at the end of inflation for $\xi_h = 10^{-9}$ and $\lambda = 10^{-10}$, $\xi_s = 4\times 10^{8}$. We can see that the isocurvature perturbations remain non-zero at the end of inflation.}
+    \label{fig4}
+\end{figure}
 
 
 
-\section{CMB observables}
+\begin{figure}[htbp]
+     \centering
+    \includegraphics[width = 0.48 \textwidth]{Figures/powerspectrum_efolds1.pdf}\quad
+     \includegraphics[width = 0.48 \textwidth]{Figures/PS_adiabatic1.pdf}\vspace{0.2cm}
+     \includegraphics[width = 0.48 \textwidth]{Figures/beta_iso_xi_0.1.pdf}\vspace{0.2cm}
+     \includegraphics[width = 0.48 \textwidth]{Figures/PS_iso1.pdf}
+
+    \caption{Primordial power spectra for curvature $\mathcal{P}_{\mathcal R}(k)$ (top), isocurvature $\mathcal{P}_{\mathcal S}(k)$ (middle), and the cross-correlation spectrum (bottom) for $\xi_h = 0.1$, $\lambda = 10^{-10}$ and $\xi_s = 4\times 10^{8}$ evaluated at the end of inflation. The vertical dashed line corresponds to the scale pivot $k_* = 0.05\,{\rm Mpc}^{-1}$}
+    \label{fig5}
+\end{figure}
+
+
+
+
+This value corresponds to an isocurvature contribution of the order of $1\%$, compatible with current limits from the Planck analysis on CDM isocurvature models $\beta_{\rm iso}(k_*) < 0.038$ at $95\%)$ CL \cite{planck2018x}, although a precise comparison depends on the correlation and the spectral index of the isocurvature component. The absence of correlation simplifies the impact on the angular spectra, implying that the applicable observational bounds correspond to the uncorrelated Planck case. Furthermore, we verify that the inclusion of this fraction in \texttt{CLASS} does not generate significant discrepancies with the observed angular spectrum (see Section \ref{sec5}).
+
+\subsubsection{Case $\xi_h \sim \mathcal{O}(10^{-1})$}
+
+For the parameter space where $\xi_h \sim 0.1$, we observe a distinct phenomenological behavior compared to the small coupling limit. We find that the isocurvature component is strongly anti-correlated with the adiabatic mode at the moment of horizon crossing for the pivot scale. However, $\mathcal{P}_{\mathcal{S}}$ is fully suppressed during super-Hubble evolution, yielding a vanishing isocurvature fraction at $N_{\rm end}$ within numerical precision. The strong anti-correlation at crossing acts as a destructive interference mechanism that suppresses the adiabatic power at specific scales, imprinting a feature in the primordial spectrum without leaving a relic isocurvature contribution at the end of inflation. The top-left panel of Fig.~\ref{fig5} illustrates the spectral evolution at the pivot scale for $\xi_h = 0.1$. The difference with respect to the $\xi_h = 10^{-4}$ case is striking: following horizon crossing, the curvature power spectrum continues to undergo significant evolution driven by the turning rate $\eta_\perp$ until it stabilizes at a constant value, marking its freeze-out. Conversely, the isocurvature spectrum is exponentially suppressed, reflecting its large effective mass and reducing its late-time impact on $\mathcal{R}_k$. This dynamics ensures that the isocurvature fraction $\beta_{\rm iso}$ becomes negligible at the end of inflation. The tensor spectrum remains practically unaltered in both scenarios, as expected. The top-right panel displays the resulting curvature power spectrum. Distinct oscillatory features arise naturally at  scales $k \lesssim 10^4\,{\rm Mpc}^{-1}$, corresponding to the transition phase where the turning rate is significant and the slow-roll parameter exhibits a transient bump. At smaller scales, the spectrum recovers the scale-invariant prediction typical of single-field inflation driven by the scalaron ($R^2$) or the Higgs field $h$. The notable difference in this regime is that the amplitude of the adiabatic mode has been shifted due to the energy transfer from the isocurvature mode during the turn in field space. The bottom-left panel reveal a transient phase of coupling induced by the turning rate $\eta_\perp$ around $N_e \simeq 25-30$. This interaction generates a significant cross-correlation, reaching values of $\cos \Delta \approx -0.786$ at $k_* = 0.05\,{\rm Mpc}^{-1}$, and facilitates power transfer to the curvature spectrum, which is responsible for generating the features. Subsequently, due to the large effective mass of the $Q_s$ field, isocurvature perturbations decay exponentially, and the modes decouple completely before the end of inflation. This results in purely adiabatic final observables, i.e., $\beta_\text{iso} \to 0$, as shown in the bottom-right panel. Lastly, in the bottom-right panel we display the isocurvature power spectrum at the end of inflation. One can see that the isocurvature does not survive at the end of inflation, which is agreement with the isocurvature fraction $\beta_{\rm iso}$. For completeness, we performed a numerical scan over the non-minimal coupling in the range $\xi_h \in [0.08, 0.2]$. 
+
+
+As illustrated in Fig.~\ref{fig6}, the position and depth of the spectral features are highly sensitive to $\xi_h$. We find that values outside the narrow window $\xi_h \approx 0.1 \pm 0.01$ shift the suppression scale away from the scales associated with the CMB low-$\ell$ suppression or wash out the features entirely. This suggests that if the low-$\ell$ deficit is of primordial origin, it points to a very specific tuning of the non-minimal coupling within the Higgs-$R^2$ model.
+
+
+
+\begin{figure}[t!]
+    \centering
+    \includegraphics[width = 0.89 \textwidth]{Figures/spectra.pdf}
+
+    \caption{Adiabatic primordial power spectrum $\mathcal{P}_{\mathcal R}(k)$ evaluated at the end of inflation for $\lambda$ and $\xi_s$ fixed, and $\xi_h$ is varied over four values. The vertical dashed line corresponds to the scale pivot $k_* = 0.05\,{\rm Mpc}^{-1}.$}
+    \label{fig6}
+\end{figure}
+
+
+
+
+
+
+
+\section{Impact on CMB observables}
+\label{sec5}
+
+To confront the predictions of the multi-field Higgs-$R^2$ model with observational data, we compute the angular power spectra for temperature and polarization anisotropies. We process the primordial power spectra $P_{\mathcal{R}}(k)$ obtained in the previous section using the Boltzmann code \texttt{CLASS}~\cite{class}, assuming a standard $\Lambda$CDM background cosmology consistent with the Planck 2018 best-fit parameters~\cite{planck2018x}.  The power spectra \eqref{powerspectrum} can be used to define th standard inflationary observables relevant to the CMB scales. Besides the isocurvature fraction  \eqref{beta_iso} and the cross-correlation fraction \eqref{croos angle}, we also define the tensor to scalar ratio as the ratio between the amplitude of tensor and scalar perturbations, where scalar perturbations include adiabatic and isocurvature modes
+
+\beq    
+    r = \dfrac{\mathcal{P}_\mathcal{T}(k_*)}{\mathcal{P}_\mathcal{R}(k_*) + \mathcal{P}_\mathcal{S}(k_*)}
+\enq 
+
+which is evaluated at the pivot scale $k_* = 0.05 {\rm Mpc}^{-1}$. This expression can be rewritten in terms of the cross-correlation fraction as \cite{Bartolo2001, Wands2002,Dimarco2003,DiMarco2005, Braglia2020}
+
+\beq  
+r = -n_\mathcal{T}\left(1 - \dfrac{\mathcal{C}_{\mathcal{RS}}}{\mathcal{P}_\mathcal{R}\mathcal{P}_\mathcal{S}}\right) = -8n_\mathcal{T}\sin^2 \Delta\,,
+\label{tensor_to_scalar}
+\enq 
+
+where $n_\mathcal{T}$ is the tensor spectral index, define as 
+
+\beq
+n_\mathcal{T} = \dfrac{\dif \log \mathcal{P}_\mathcal{T}}{\dif \log k}\,,
+\enq
+
+and the scalar spectral index $n_s$ is defined in the usual way 
+
+\beq
+    n_s - 1 = \dfrac{\dif \log \mathcal{P}_\mathcal{R}}{\dif \log k}\,.
+\enq
+
+
+
+
+The consistency relation \eqref{tensor_to_scalar} indicates that the amplitude of primordial gravitational waves is suppressed in multi-field inflation compared to the single-field expectation. Current observational constraints from the combination of Planck, BICEP/Keck, and BAO data place an upper limit on the tensor-to-scalar ratio of $r < 0.036$ at $95\%$ CL \cite{BICEP_Keck_2021, planck2018x}, while the updated value reported by ACT + Planck + SPT + DESI for the scalar spectral index is $n_s \approx 0.9728 \pm 0.0027$ \cite{ACT_2025}. The CMB observables are summarized in Table \ref{table1}. As one can see, the model predicts a tensor to scalar ratio $r\sim \mathcal{O}(10^{-3})$, which satisfies this bound comfortably.
+
+
+
+\begin{table}[t!]
+    \centering
+    \begin{tabular}{@{\extracolsep{10pt}}c|*{8}c}
+        \hline\hline
+        Non-minimal coupling
+        & $N_\text{hc}$
+        & $P_\mathcal{R}(k_*)$
+        & $n_s$
+        & $r$
+        & $\beta_\text{iso}$
+        & $\cos\Delta$
+        \\
+        \hline
+        $\xi_h = 10^{-9}$
+        & $50$
+        & $2.404\times10^{-9}$
+        & $0.9614$
+        & $4.264 \times 10^{-3}$
+        & $0.0101$
+        & $0$
+        \\
+        \hline
+        $\xi_h = 0.1$
+        & $50$
+        & $2.083\times 10^{-9}$
+        & $0.9687$
+        & $4.925\times 10^{-3}$
+        & $0$
+        & $-0.7816$
+        \\
+        \hline\hline
+    \end{tabular}
+    \caption{CMB observables for Higgs-$R^2$ inflation with $\lambda = 10^{-10}$ $\xi_s = 4\times 10^8$ fixed and the cases $\xi_h = 10^{-9}$ and $\xi_h = 0.1$ for non-minimal Higgs constant copuling. All observables were evaluated  at the pivot scale $k_* = 0.05\,{\rm Mpc}^{-1}$ }
+    \label{table1}
+\end{table}
+
+
+
+
+
+
+
+\subsection{Connection to the low-$\ell$ anomaly}
+\label{subsec:low_l}
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width = 0.89 \textwidth]{Figures/TT_angular_spectrum.pdf}
+
+    \caption{Comparison of the TT angular power spectrum for two representative choices of the Higgs non-minimal coupling $\xi_h$. For $\xi_h = 10^{-9}$ the model is observationally indistinguishable from $\Lambda$CDM, whereas $\xi_h = 0.1$ produces a characteristic suppression at low multipoles, with a residual about $\sim 25-30\%$, with accordance to Planck \cite{planck2018x}.}
+    \label{fig7}
+\end{figure}
+
+The anomaly in the large-scale power of the CMB temperature anisotropies, particularly the deficit in the quadrupole and octupole moments observed by Planck \cite{planck2018x}, challenges the standard $\Lambda$CDM paradigm. While usually attributed to cosmic variance, a physical origin remains a compelling possibility. In the literature, there have been various attempts to describe this power deficit, utilizing multi-field models with non-canonical kinetic terms \cite{Braglia2020}, modifications to the inflationary epoch such as a brief kinetic regime imposing a cutoff on the primordial power spectrum \cite{Contaldi2003}, late-time effects like destructive interference caused by the integrated Sachs-Wolfe effect, or by introducing a class of potentials similar to those arising in minimal supersymmetric extensions of the Standard Model \cite{Jain2009}.
+
+In the Higgs-$R^2$ model, the turning rate in field space generates localized features in the primordial power spectrum that naturally map onto the largest angular scales of the CMB last scattering surface, specifically at $\ell \lesssim 30$. In Figure~\ref{fig7}, we present the lensed temperature auto-correlation spectrum, $\mathcal{D}_\ell^{TT} = \ell(\ell+1)C_\ell^{TT}/2\pi$, for our benchmark model with $\xi_h = 0.1$. To verify that this feature is unique to the non-minimal coupling dynamics, we compare it with the  case $\xi_h = 10^{-9}$. 
+
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width = 0.48 \textwidth]{Figures/TE_angular_spectrum.pdf}
+    \quad
+    \includegraphics[width = 0.48 \textwidth]{Figures/EE_angular_spectrum.pdf}
+
+
+    \caption{Angular power spectra for the TE cross-correlation (left panel) and EE polarization (right panel). The solid blue line represents the Higgs-$R^2$ model prediction for $\xi_h =0.1$, while the dashed black line shows the $\Lambda$CDM baseline using Planck 2018 best-fit parameters.}
+    \label{fig8}
+\end{figure}
+
+As expected, the limit $\xi_h \ll 1 $ limit provides a clean control case in which the model smoothly reduces to standard single-field dynamics, yielding angular spectra indistinguishable from $\Lambda$CDM. 
+For the case $\xi_h = 0.1$, the theoretical prediction closely follows the data, exhibiting a suppression of approximately $25\% - 30\%$ at low-$\ell$ multipoles. As highlighted in the inset of Fig.~\ref{fig7}, the residuals show a clear deviation from $\Lambda$CDM at $\ell \lesssim 30$, reducing the tension. Crucially, at smaller scales ($\ell \gtrsim 100$), the acoustic peaks are reproduced with high accuracy. The turning rate mechanism discussed in previous sections naturally produce features consistent with low-$\ell$ anomaly observed by Planck.
+The model preserves the standard acoustic phase and amplitude, ensuring consistency with the precise measurements of the damping tail. We further validate the physical consistency of the model by examining the polarization spectra. Figure~\ref{fig8} displays the cross-correlation (TE) and E-mode polarization (EE) spectra. The TE spectrum shows excellent agreement with the standard model, accurately reproducing the phase of the acoustic oscillations. This confirms that the turning dynamics, while suppressing power at large scales, preserve the adiabatic structure of the perturbations required by the data. A slight reduction in the amplitude of the EE acoustic peaks is observed when compared with the $\Lambda$CDM baseline. This effect is expected, as the EE spectrum is more sensitive to small variations in the amplitude and scale dependence of the primordial scalar spectrum, especially around intermediate scales. Given the significantly larger observational uncertainties in polarization compared to temperature, the predicted EE spectrum remains fully consistent with current constraints.
+
+
+
+
+
+
+
+
+
+
+
+
+% \subsection{Tensor-to-scalar ratio}
+% \label{subsec:r}
+
+% The multi-field dynamics also leave an imprint on the production of primordial gravitational waves. In Figure~\ref{fig8}, we show the scale-dependent tensor-to-scalar ratio, $r(k) \equiv \mathcal{P}_t(k) / \mathcal{P}_{\mathcal{R}}(k)$.
+
+% At the CMB pivot scale ($k_* = 0.05 \, \text{Mpc}^{-1}$), we find a value of:
+% \begin{equation}
+%     r_{0.05} \approx 0.0028 \, .
+% \end{equation}
+% This prediction is well below the current observational upper bound set by the BICEP/Keck and Planck collaboration ($r < 0.036$ at 95\% CL)~\cite{Ade:2021us}. 
+
+% It is worth noting that the tensor-to-scalar ratio exhibits a specific scale dependence. The quantity $r(k)$ shows a local minimum around $k \sim 10^{-2} \, \text{Mpc}^{-1}$, which corresponds to the scales where the scalar power spectrum $\mathcal{P}_{\mathcal{R}}$ is enhanced by the oscillatory features (the "bumps") following the dip. Since the tensor spectrum $\mathcal{P}_t$ remains largely unaffected by the scalar turn, the structure in $r(k)$ is dominated by the inverse of the scalar features. This specific shape of $r(k)$ serves as a distinguishable signature of the model, potentially testable by future high-sensitivity B-mode experiments.
+
+
+
 
 \section{Discussion and conclusions}
+\label{sec6}
+
+
+
+In this work, we have presented a comprehensive analysis of primordial perturbations in multi-field Higgs-$R^2$ inflation. By going beyond the effective single-field approximation and performing a full numerical integration of the background and perturbation equations, we have revealed a rich phenomenology controlled by the non-minimal coupling $\xi_h$. Our results demonstrate that the field-space geometry and the trajectory's turning rate play a decisive role in shaping the inflationary observables, leading to distinct signatures that are absent in the standard single-field limit. We identified two dynamical regimes depending on the magnitude of the Higgs non-minimal coupling. For weak coupling ($\xi_h \ll 1$), the turning rate $\eta_{\perp}$ is negligible, and the adiabatic power spectrum remains featureless. However, contrary to the standard heavy-field intuition, we found that the isocurvature mode $Q_s$ remains light ($m_\text{iso}^2 \lesssim H^2$) and fails to decay, leaving a residual isocurvature fraction $\beta_\text{iso} \sim \mathcal{O}(10^{-2})$ at the end of inflation. This implies that in the weak coupling limit, Higgs-$R^2$ inflation is not effectively single-field, but rather a multi-field scenario with surviving isocurvature modes that could be constrained by future high-precision data.
+
+The second, and perhaps most intriguing regime, appears for $\xi_h \sim 0.1$. In this case, the turning rate becomes significant as the trajectory transitions from the ridge at $h=0$ towards the valley. This transient turn induces a strong coupling between adiabatic and isocurvature modes. We showed that this interaction results in a localized dip in the primordial curvature spectrum at large scales, followed by oscillatory features. Importantly, in this regime, the isocurvature modes eventually become heavy and decay exponentially, yielding a purely adiabatic spectrum at the end of inflation. When confronting these predictions with observations, we found that the spectral feature generated in the $\xi_h \sim 0.1$ scenario naturally maps onto the large angular scales of the CMB. This mechanism provides a physical explanation for the suppression of the low-$\ell$ multipoles observed by Planck, a feature that remains anomalous within the standard $\Lambda$CDM concordance model. Our analysis confirms that this suppression can be achieved without disrupting the acoustic peaks at smaller scales, maintaining consistency with the precise measurements of the CMB damping tail. Although our results indicate that the model can account for the low–$\ell$ CMB suppression, confirming this interpretation requires a dedicated likelihood evaluation. Given the large cosmic variance at $\ell\lesssim 30$, a full statistical comparison with the Planck low–$\ell$ likelihood is needed to determine whether the improvement over $\Lambda$CDM is significant. We leave this analysis for future work. 
+
+% Furthermore, we explored the implications for primordial gravitational waves. We found a tensor-to-scalar ratio of $r \approx 0.0028$ at the pivot scale, which is well within the current bounds set by BICEP/Keck and Planck. Interestingly, the scale dependence of $r(k)$ mirrors the features of the scalar spectrum, exhibiting a local minimum at scales corresponding to the scalar enhancement. This specific shape of the tensor-to-scalar ratio serves as a potential distinguishable signature of this multi-field dynamic, which could be tested by next-generation B-mode experiments.
+
+
+
+Given that the suppression of power in our model originates from transient multifield effects associated with a non-trivial turn in field space, it would be natural to investigate whether the same dynamics could leave signatures in higher-order correlation functions. In particular, the interplay between adiabatic-isocurvature mixing and the turn-rate suggests that this setup may lead to distinctive non-Gaussian features. We leave a quantitative analysis of primordial bispectra and constraints on $f_{\mathrm{NL}}$ for future work.
 
 \section{Acknowledgments}
+
+This work was partially supported by SECIHTI CBF2023-2024-1937 and FP has received the funding 803062 from SECIHTI-México. 
+
+
+
+
+
+
 
 
 
 
 \appendix
-
-\section{Single-field inflation along the valleys 
+\section{Single-field inflation along the valleys
 \label{appendix1}}
 
-La aproximación de los valles del potencial \eqref{potential Einstein} en el marco de Einstein es relevante para el análisis de la evolución de los campos $(\phi\,,h)$. En los trabajos previos sobre este modelo se discute este análisis con más detalle \cite{Wang2017,GUNDHI2020,He2018}, por lo que aquí nos limitaremos a presentar las ideas principales. En el límite $h\gg v_\text{ew}$, los valles del potencial \eqref{potential Einstein} están dados por la condición
+The valley approximation of the potential \eqref{potential Einstein} in the Einstein frame is relevant for analyzing the evolution of the fields $(\phi, h)$. This analysis has been discussed in detail in previous works on this model \cite{Wang2017,GUNDHI2020,He2018}; therefore, here we restrict ourselves to outlining the main ideas. In the limit $h\gg v_\text{ew}$, the valleys of the potential \eqref{potential Einstein} are defined by the condition
 
 \beq
 \dfrac{\partial V}{\partial h} = 0\,,\quad h_0^2(\phi) = \dfrac{\xi_h}{\xi_h^2 + 4\lambda \xi_s}(e^{\alpha \phi} - 1 )
 \label{valley}
-\enq 
+\enq
 
-Esta condición sirve como un punto estacionario en el plano $(h\,,\dot{h})$; el escalarón $\phi$ rueda al mínimo del potencial \eqref{potential Einstein}, y por tanto los valles sirven como un atractor universal. Como el potencial es simétrico respecto a $h\to - h$, \eqref{valley} localiza los dos valles de $V(\phi\,,h)$. A lo largo de uno de los valles, el potencial está dado por el siguiente potencial efectivo en función de $\phi$
+This condition represents a stationary point in the $(h, \dot{h})$ plane; as the scalaron $\phi$ rolls down to the minimum of the potential \eqref{potential Einstein}, the valleys act as a universal attractor. Since the potential is symmetric under $h\to - h$, Eq. \eqref{valley} identifies the two valleys of $V(\phi, h)$. Along one of the valleys, the potential is given by the following effective potential as a function of $\phi$:
 
-\beq 
+\beq
     V_\text{eff}(\phi\,,h_0(\phi)) = \dfrac{ \lambda}{4(\xi_h^2 + 4\lambda\xi_s)}(1 - e^{-\alpha\phi})^2\,.
     \label{effective potential}
-\enq 
+\enq
 
-Este potencial tiene exactamente la misma forma que el potencial del modelo de inflación $R^2$ o del modelo de Higgs \cite{BEZRUKOV2008}. Para el espacio estándar de parámetros discutido anteriormente, el modelo se reduce efectivamente a un modelo de un solo campo escalar. Dado que el campo de Higgs a lo largo de los valles está dado por \eqref{valley}, la acción \eqref{Higgs-R2 action} a lo largo de los valles toma la forma  
+This potential has exactly the same form as the potential in $R^2$ inflation or the Higgs inflation model \cite{BEZRUKOV2008}. For the standard parameter space discussed above, the model effectively reduces to a single scalar field model. Given that the Higgs field along the valleys is determined by \eqref{valley}, the action \eqref{Higgs-R2 action} along these trajectories takes the form
 
 \beq
     S_E[g_\mu\,,\phi\,,h] = \int \dif^4 x\,\sqrt{-g}\,\left[\dfrac{1}{2}R - \dfrac{1}{2}g^{\mu\nu}\partial_\mu\phi\partial_\nu\phi \left(1 + \gamma^2(1 - e^{-\alpha\phi})^{-1}\right) -V_\text{eff}(\phi)\right]\,,
-\enq 
+\enq
 
-donde $\tilde{\xi}^2 = \dfrac{\xi_h}{6(\xi_h^2 + 4\lambda\xi_s)}$. Vemos que si $\lambda = 0.13$, $\xi_h \sim 10^4$ la constante es del orden de $\tilde{\xi} \sim 10^{-5}$, por lo que el segundo factor del término cinético es subdominante. En la escala de inflación $\phi \gg 1$, el modelo se reduce efectivamente a la inflación canónica de un campo escalar con potencial efectivo dado por \eqref{effective potential}.  Sin embargo, para un espacio de parámetros tal que $\xi_h \sim \lambda\xi_s$ con la normalización \eqref{CMB constraint} fija, la constante resulta $\tilde{\xi}\sim \mathcal{O}(1)$. Este caso corresponde a lo que se conoce como quasi-single field inflation regimen \cite{chen2010prd,Chen_2010}.
+where $\tilde{\xi}^2 = \frac{\xi_h}{6(\xi_h^2 + 4\lambda\xi_s)}$. We observe that if $\lambda = 0.13$ and $\xi_h \sim 10^4$, the constant is of the order $\tilde{\xi} \sim 10^{-5}$; thus, the second factor in the kinetic term becomes subdominant. At the inflationary scale $\phi \gg 1$, the model effectively reduces to canonical single-field inflation with the effective potential given by \eqref{effective potential}. However, for a parameter space such that $\xi_h \sim \lambda\xi_s$, the constant becomes $\tilde{\xi}\sim \mathcal{O}(1)$. This case corresponds to what is known as the quasi-single field inflation regime \cite{chen2010prd,Chen_2010}. Along the valleys, both the unit vectors and the turning rate adopt a simplified form:
 
-
-A lo largo de los valles, tanto los vectores unitarios como el bending adoptan una forma simplficada
-
-\beq 
+\beq
     T^I = \dfrac{(1\,, \tilde{\xi} e^{\alpha\phi/2})}{\sqrt{1 + \tilde{\xi}^2}}\,,\quad N^I = \dfrac{(-\tilde{\xi}\,,  e^{\alpha\phi/2})}{\sqrt{1 + \tilde{\xi}^2}}\,, \quad \eta_\perp = \dfrac{\tilde{\xi}}{\sqrt{1 + \tilde{\xi}^2}}
     \label{valley approach}
 \enq
 
-Si $\tilde{\xi} \ll 1$, el vector $T^I$ apunta a la dirección de $\phi$, mientras que $N^I$ apunta en la dirección de $h$. El bending $\eta_\perp$ es despreciable dentro de los valles. 
+If $\tilde{\xi} \ll 1$, the vector $T^I$ aligns with the $\phi$ direction, while $N^I$ points in the $h$ direction. The turning rate $\eta_\perp$ is negligible within the valleys.
 
 
 
@@ -518,7 +746,7 @@ Si $\tilde{\xi} \ll 1$, el vector $T^I$ apunta a la dirección de $\phi$, mientr
 
 %Bibliography
 
-\bibliographystyle{abbrv}
+\bibliographystyle{JHEP}
 \bibliography{main.bib}
 
 
