@@ -14,7 +14,7 @@ common_params = {
 }
 
 
-ruta_archivo = '/Users/flaviopineda/Documents/Fisica/Proyectos/Generating isocurvature modes and primordial features in multi-field Higgs-R^2 inflation/Analysis/Pr_dense_input_NORMALIZADO5.dat'
+ruta_archivo = '/Users/flaviopineda/Documents/Fisica/Proyectos/Generating isocurvature modes and primordial features in multi-field Higgs-R^2 inflation/Analysis/Pr_dense_input_xi_0.1.dat'
 
 params_model = common_params.copy()
 params_model.update({

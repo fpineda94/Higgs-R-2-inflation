@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex main"] 1765864725 "main.aux" "main.bbl" "main" 1765864726
+["bibtex main"] 1766946642 "main.aux" "main.bbl" "main" 1766946643
   "./JHEP.bst" 1724262989 19970 275b13ecc06be0c35cbeb6a7202c3656 ""
-  "main.aux" 1765864726 23148 24e8377ef5844d274bc894e8ffc2947d "pdflatex"
-  "main.bib" 1765863530 75687 e6d28931bfece71e12fa01035edfcea2 ""
+  "main.aux" 1766946643 22856 b0b33d8e5cd6b08870b56a55245e33fa "pdflatex"
+  "main.bib" 1766940900 76263 6e294e8fd9b2c7e47bbc3fee5195d451 ""
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1765864725 "/Users/flaviopineda/Documents/Fisica/Proyectos/Generating isocurvature modes and primordial features in multi-field Higgs-R^2 inflation/Paper/main.tex" "main.pdf" "main" 1765864726
-  "/Users/flaviopineda/Documents/Fisica/Proyectos/Generating isocurvature modes and primordial features in multi-field Higgs-R^2 inflation/Paper/main.tex" 1765864724 73683 cce038e66915f436257a77581fd2c6e3 ""
+["pdflatex"] 1766946642 "/Users/flaviopineda/Documents/Fisica/Proyectos/Generating isocurvature modes and primordial features in multi-field Higgs-R^2 inflation/Paper/main.tex" "main.pdf" "main" 1766946643
+  "/Users/flaviopineda/Documents/Fisica/Proyectos/Generating isocurvature modes and primordial features in multi-field Higgs-R^2 inflation/Paper/main.tex" 1766946635 77416 346c53c96565cc1fee574d6c8e7222d4 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/helvetic/phvbc7t.tfm" 1136768653 2672 88159036c64e674fcd9515bc9c7052d4 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
@@ -236,12 +236,12 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1671726064 2826454 d3ace1a7a8e0e97fdef4bd4cfb547ae0 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "Figures/EE_angular_spectrum.pdf" 1764880766 201234 7a496631f18f3846f1ac56f617b66b82 ""
+  "Figures/EE_angular_spectrum.pdf" 1766935743 211941 f48447b1a65f07acecbc81c4e33e073c ""
   "Figures/PS_adiabatic1.pdf" 1764377473 225481 8dd8ba75a99423c1b3236a95afc30d9b ""
   "Figures/PS_adiabatic5.pdf" 1765738551 225112 5f24edb3adaae685933d9cfe1fe48430 ""
   "Figures/PS_iso1.pdf" 1764377544 224927 9b8fa802990bc5802eba20c5c8d86349 ""
-  "Figures/TE_angular_spectrum.pdf" 1764880763 201435 7544b63f9c9ac23a2805fbf8abdf4a2a ""
-  "Figures/TT_angular_spectrum.pdf" 1765738813 237667 1b434927b39e0688161289750f6c62bd ""
+  "Figures/TE_angular_spectrum.pdf" 1766935415 212394 a42b9fcdaecb08dedc532235cbe690da ""
+  "Figures/TT_angular_spectrum.pdf" 1766935414 257570 4f94c3094df38d1a4a8a77fe2d008649 ""
   "Figures/adiabaticmode1.pdf" 1765848788 194511 a567b8bf387045745f050eb38791b6df ""
   "Figures/adiabaticmode5.pdf" 1765848141 192750 50e984bb63f2f5a24b0eefb16a7933d1 ""
   "Figures/beta_iso_xi_0.1.pdf" 1765733572 137779 289112abd78cc99acbc3b5c85ba90c07 ""
@@ -259,11 +259,11 @@
   "Figures/spectra.pdf" 1765736275 197836 e871a2de26812ccb0048d8c00a74d63a ""
   "Figures/trajectory1.pdf" 1765578888 71223 f53c14df56bfcba3b90a0475f12a93ab ""
   "jcappub.sty" 1764607834 11226 958327d12c81d47068e336e76192b07c ""
-  "main.aux" 1765864726 23148 24e8377ef5844d274bc894e8ffc2947d "pdflatex"
-  "main.bbl" 1765864725 19814 26b1498a96bd68ef0386e0f7ecb10e86 "bibtex main"
-  "main.out" 1765864726 2498 8a826fb7bcfc8d68eed4ec93542f87c9 "pdflatex"
-  "main.tex" 1765864724 73683 cce038e66915f436257a77581fd2c6e3 ""
-  "main.toc" 1765864726 1260 301d0c8acc644f1e67989a0ff075a947 "pdflatex"
+  "main.aux" 1766946643 22856 b0b33d8e5cd6b08870b56a55245e33fa "pdflatex"
+  "main.bbl" 1766946642 19613 599447bc957f3bfd9a147cbb16deaadc "bibtex main"
+  "main.out" 1766946643 2561 1a2f0aa77e763ff8d49f2f599a90c1e2 "pdflatex"
+  "main.tex" 1766946635 77416 346c53c96565cc1fee574d6c8e7222d4 ""
+  "main.toc" 1766946643 1265 9c5aa2893d4e8fafb9ea94a9dd858b9e "pdflatex"
   (generated)
   "main.aux"
   "main.log"

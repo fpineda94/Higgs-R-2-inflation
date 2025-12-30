@@ -31,6 +31,13 @@ Y.~Akrami, F.~Arroja, M.~Ashdown, J.~Aumont, C.~Baccigalupi, M.~Ballardini
   et~al., \emph{Planck 2018 results-x. constraints on inflation},
   {\emph{Astronomy \& Astrophysics} {\bfseries 641} (2020) A10}.
 
+\bibitem{ACT_2025}
+E.~Calabrese, J.~C. Hill, H.~T. Jense, A.~La~Posta, I.~Abril-Cabezas, G.~E.
+  Addison et~al., \emph{The atacama cosmology telescope: Dr6 constraints on
+  extended cosmological models},
+  \href{https://doi.org/10.1088/1475-7516/2025/11/063}{\emph{Journal of
+  Cosmology and Astroparticle Physics} {\bfseries 2025} (2025) 063}.
+
 \bibitem{Wands2002}
 D.~Wands, N.~Bartolo, S.~Matarrese and A.~Riotto, \emph{Observational test of
   two-field inflation},
@@ -282,24 +289,6 @@ T.~Modak, \emph{${R}^{2}$-higgs inflation: ${R}^{3}$ contribution and
   \href{https://doi.org/10.1103/srpt-jd6s}{\emph{Phys. Rev. D} {\bfseries 112}
   (2025) 115006}.
 
-\bibitem{Contaldi2003}
-C.~R. Contaldi, M.~Peloso, L.~Kofman and A.~Linde, \emph{Suppressing the lower
-  multipoles in the cmb anisotropies},
-  \href{https://doi.org/10.1088/1475-7516/2003/07/002}{\emph{Journal of
-  Cosmology and Astroparticle Physics} {\bfseries 2003} (2003) 002–002}.
-
-\bibitem{Jain2009}
-R.~K. Jain, P.~Chingangbam, J.-O. Gong, L.~Sriramkumar and T.~Souradeep,
-  \emph{Punctuated inflation and the low cmb multipoles},
-  \href{https://doi.org/10.1088/1475-7516/2009/01/009}{\emph{Journal of
-  Cosmology and Astroparticle Physics} {\bfseries 2009} (2009) 009–009}.
-
-\bibitem{Chluba2015}
-J.~Chluba, J.~Hamann and S.~P. Patil, \emph{Features and new physical scales in
-  primordial observables: Theory and observation},
-  \href{https://doi.org/10.1142/s0218271815300232}{\emph{International Journal
-  of Modern Physics D} {\bfseries 24} (2015) 1530023}.
-
 \bibitem{Barbon2009}
 J.~L.~F. Barbón and J.~R. Espinosa, \emph{On the naturalness of higgs
   inflation}, \href{https://doi.org/10.1103/physrevd.79.081302}{\emph{Physical
@@ -432,11 +421,17 @@ P.~Ade, Z.~Ahmed, M.~Amiri, D.~Barkats, R.~B. Thakur, C.~Bischoff et~al.,
   \href{https://doi.org/10.1103/physrevlett.127.151301}{\emph{Physical Review
   Letters} {\bfseries 127} (2021) }.
 
-\bibitem{ACT_2025}
-E.~Calabrese, J.~C. Hill, H.~T. Jense, A.~La~Posta, I.~Abril-Cabezas, G.~E.
-  Addison et~al., \emph{The atacama cosmology telescope: Dr6 constraints on
-  extended cosmological models},
-  \href{https://doi.org/10.1088/1475-7516/2025/11/063}{\emph{Journal of
-  Cosmology and Astroparticle Physics} {\bfseries 2025} (2025) 063}.
+\bibitem{louis2025}
+T.~Louis, A.~La~Posta, Z.~Atkins, H.~T. Jense, others and {The Atacama
+  Cosmology Telescope collaboration}, \emph{{The Atacama Cosmology Telescope:
+  DR6 power spectra, likelihoods and $\Lambda$CDM parameters}},
+  \href{https://doi.org/10.1088/1475-7516/2025/11/062}{\emph{Journal of
+  Cosmology and Astroparticle Physics} {\bfseries 2025} (2025) 062}.
+
+\bibitem{Jain2009}
+R.~K. Jain, P.~Chingangbam, J.-O. Gong, L.~Sriramkumar and T.~Souradeep,
+  \emph{Punctuated inflation and the low cmb multipoles},
+  \href{https://doi.org/10.1088/1475-7516/2009/01/009}{\emph{Journal of
+  Cosmology and Astroparticle Physics} {\bfseries 2009} (2009) 009–009}.
 
 \end{thebibliography}\endgroup

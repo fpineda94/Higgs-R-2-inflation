@@ -34,7 +34,7 @@ class Perturbations:
 
         self.k_pivot = self.aH(self.Nhc) 
         self.norma = self.k_CMB/self.k_pivot    #Normalization factor to convert k modes in Mpc^-1
-        self.k_min, self.k_max = self.norma*self.aH(self.Nhc - 7), self.norma*self.aH(self.Nend - 4)
+        self.k_min, self.k_max = self.norma*self.aH(self.Nhc - 10), self.norma*self.aH(self.Nend - 4)
         self.k_modes = np.logspace(np.log10(self.k_min), np.log10(self.k_max), num = 500)  #List modes in Mpc^-1
 
 
