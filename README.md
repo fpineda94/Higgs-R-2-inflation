@@ -6,7 +6,7 @@ A Python package for computing the inflationary background and the evolution of 
 
 This code provides a framework to analyze the multi-field dynamics of the Higgs–R² inflation model as a function of the number of e-folds or cosmic time. It was developed for the paper:
 
-> **"Primordial features and low-ℓ suppression from isocurvature modes in multi-field Higgs-R² inflation"**
+> **"Isocurvature-induced features in multi-field Higgs-R² inflation"**
 > *F. Pineda, L. O. Pimentel (2025)*
 > [arXiv:2512.14455](https://arxiv.org/abs/2512.14455) 
 
