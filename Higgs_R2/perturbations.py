@@ -368,33 +368,28 @@ class Perturbations:
             """
             if k is None: k = self.k_CMB
             
-            # 1. Definir malla temporal común (desde inicio hasta fin de inflación)
             N_ini = self.N_ini(k)
             N_eval = np.linspace(N_ini, self.Nend, 1000)
             
-            # 2. DOBLE PASADA DEL SOLVER
-            # Pasada 1: Modo Adiabático
+       
             sol1 = self.solver1(mode_index=0)
-            Y1 = sol1.sol(N_eval) # Evaluamos en la malla común
+            Y1 = sol1.sol(N_eval) 
             
-            # Pasada 2: Modo Isocurvatura
             sol2 = self.solver1(mode_index=1)
             Y2 = sol2.sol(N_eval)
             
-            # 3. Reconstruir variables complejas
-            # Índices basados en tu código: R(4,6), Q(8,10)
+  
             R1 = Y1[4] + 1j*Y1[6]
             Q1 = Y1[8] + 1j*Y1[10]
             
             R2 = Y2[4] + 1j*Y2[6]
             Q2 = Y2[8] + 1j*Y2[10]
             
-            # 4. Background y S (Isocurvatura física)
-            # Vectorizamos para evaluar H y dotsigma en todo el array N_eval
+     
             H_arr = self.H(N_eval)
             dsigma_arr = self.dotsigma(N_eval)
 
-            # Evitar división por cero si dotsigma cruza por 0
+    
             epsilon = 1e-30
             dsigma_safe = np.where(np.abs(dsigma_arr) < epsilon, epsilon, dsigma_arr)
             
@@ -402,33 +397,29 @@ class Perturbations:
             S1 = pref_S * Q1
             S2 = pref_S * Q2
             
-            # 5. CÁLCULO DE ESPECTROS (SUMA ESTADÍSTICA)
+    
             prefactor = k**3 / (2 * np.pi**2)
             
-            # Suma de cuadrados (Amplitudes)
+       
             P_R = prefactor * (np.abs(R1)**2 + np.abs(R2)**2)
             P_S = prefactor * (np.abs(S1)**2 + np.abs(S2)**2)
             
-            # Suma de productos cruzados (Correlación)
-            # Cross = R1*S1* + R2*S2*
+           
             Cross = (R1 * np.conj(S1)) + (R2 * np.conj(S2))
             P_RS = prefactor * np.real(Cross)
             
-            # 6. OBSERVABLES DERIVADOS
-            
-            # Beta isocurvatura
+         
             total_power = P_R + P_S
             beta_iso = np.zeros_like(P_R)
             mask_power = total_power > 1e-60
             beta_iso[mask_power] = P_S[mask_power] / total_power[mask_power]
             
-            # Cos Delta (Con filtro de seguridad para P_S -> 0)
+ 
             cosDelta = np.zeros_like(P_R)
-            # Solo calculamos correlación si P_S y P_R son numéricamente significativos
             mask_corr = (P_R > 1e-60) & (P_S > 1e-60)
             
             cosDelta[mask_corr] = P_RS[mask_corr] / np.sqrt(P_R[mask_corr] * P_S[mask_corr])
-            cosDelta = np.clip(cosDelta, -1.0, 1.0) # Limpieza numérica
+            cosDelta = np.clip(cosDelta, -1.0, 1.0) 
             
             return {
                 'N': N_eval,
